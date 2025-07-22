@@ -5,3 +5,11 @@ es_estudiante = True   # Una variable 'es_estudiante' que guarda un valor boolea
 
 print(nombre_usuario)  # Imprime: Ana
 print(edad)            # Imprime: 25
+
+# Tradicional
+
+print("El nombre del usuario es " + nombre_usuario)  # Concatena cadenas
+
+# f-string
+
+print(f"El nombre del usuario es {nombre_usuario} y tengo {edad} años")  # Usa f-string para formatear
