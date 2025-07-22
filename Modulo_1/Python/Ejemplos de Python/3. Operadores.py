@@ -9,7 +9,7 @@ modulo = 10 % 3     # 1 (el residuo de la división)
 potencia = 2 ** 3   # 8 (2 elevado a la 3)
 print(f"Suma: {suma}, Resta: {resta}, Multiplicación: {multiplicacion}, División: {division}, División entera: {division_entera}, Módulo: {modulo}, Potencia: {potencia}")
 
-# Comparación: Para comparar valores.
+# Comparación = Relacionales: Para comparar valores.
 
 igual = (10 == 10)        # True (son iguales)
 diferente = (10 != 5)     # True (son diferentes)   

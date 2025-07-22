@@ -149,3 +149,7 @@ else:
 # ====================================================================
 print("\n\n--- Fin de la Guía ---")
 print("¡La práctica es la clave! Modifica las variables y vuelve a ejecutar el código.")
+
+""" 
+Hola, has llegado al final de la guía interactiva de condicionales en Python.
+"""

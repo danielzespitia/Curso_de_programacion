@@ -7,8 +7,10 @@ for numero in range(5):
 
 # Recorrer una lista de nombres
 nombres = ["Ana", "Luis", "Marta"]
+
 for nombre in nombres:
     print(f"Hola, {nombre}")
+    
 # Bucle for: Se usa para "iterar" o recorrer una secuencia de elementos
 # (como una lista de nombres o un rango de números). Se sabe de antemano cuántas veces se va a repetir
 
@@ -28,17 +30,3 @@ while contador < 5:
     print(f"Contador: {contador}")
     contador += 1  # Incrementa el contador en 1
 # Nota: Asegúrate de que la condición eventualmente se vuelva falsa para evitar un bucle infinito.
-
-
-
-# Bucle while con una condición que se vuelve falsa
-contador = 0
-while contador < 5:
-    print(f"Contador: {contador}")
-    contador += 1  # Incrementa el contador en 1
-# Nota: Asegúrate de que la condición eventualmente se vuelva falsa para evitar un bucle infinito.  
-
-
-
-
-
