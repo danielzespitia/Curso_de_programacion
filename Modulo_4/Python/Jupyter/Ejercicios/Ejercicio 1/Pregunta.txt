@@ -1,0 +1,15 @@
+Ejercicio: Generación automática de cartas de entrega de notas
+
+Imagina que eres profesor y necesitas entregar a cada estudiante 
+una carta personalizada con sus notas y datos. Dispones de un archivo 
+Excel con la información de los alumnos y sus calificaciones. Usando 
+Python y la librería docxtpl, deberás crear un programa que:
+
+Lea el archivo Excel con los datos de los estudiantes.
+
+Para cada estudiante, genere una carta en formato Word (.docx) usando 
+una plantilla, incluyendo su nombre, calificaciones y correo electrónico.
+La carta debe contener también tus datos como profesor (nombre, teléfono, 
+correo y fecha de entrega).
+
+Entrega el código que realiza este proceso y explica brevemente cómo funciona.
