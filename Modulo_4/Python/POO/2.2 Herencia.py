@@ -5,7 +5,8 @@
 #
 # Beneficios:
 #
-# Reutilización de código (DRY - Don't Repeat Yourself): Define comportamientos comunes en una clase padre
+# Reutilización de código (DRY - Don't Repeat Yourself): Define comportamientos comunes en una 
+# clase padre
 # y rehúsalos en múltiples clases hijas.
 #
 # Organización lógica: Crea una jerarquía de clases que refleja una relación "es un tipo de".

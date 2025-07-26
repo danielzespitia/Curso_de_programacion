@@ -1,14 +1,19 @@
 # Polimorfismo
 #
-# La palabra polimorfismo significa "muchas formas". En POO, se refiere a la capacidad de objetos de diferentes clases
-# de responder a la misma llamada de método de manera específica para su clase. En el ejemplo anterior, tanto Gerente
+# La palabra polimorfismo significa "muchas formas". En POO, se refiere a la capacidad 
+# de objetos de diferentes clases
+# de responder a la misma llamada de método de manera específica para su clase. En el ejemplo 
+# anterior, tanto Gerente
 # como Programador tienen un método calcular_salario_mensual(), pero cada uno lo ejecuta de forma diferente.
 #
-# El polimorfismo permite escribir código más genérico y desacoplado. Puedes tener una función que trabaje con objetos
-# de la clase padre, y funcionará correctamente con cualquier objeto de sus clases hijas sin necesidad de saber de qué tipo específico son.
+# El polimorfismo permite escribir código más genérico y desacoplado. Puedes tener una función que 
+# trabaje con objetos
+# de la clase padre, y funcionará correctamente con cualquier objeto de sus clases hijas sin necesidad 
+# de saber de qué tipo específico son.
 #
 # Ejemplo Extendido:
-# Usando las clases del ejemplo anterior, podemos crear una función que procese la nómina de todos los empleados, sin importar su cargo.
+# Usando las clases del ejemplo anterior, podemos crear una función que procese la nómina de todos 
+# los empleados, sin importar su cargo.
 
 # (Continuación del código de Empleado, Gerente, Programador)
 

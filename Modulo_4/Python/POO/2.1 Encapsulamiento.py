@@ -1,19 +1,27 @@
-# El encapsulamiento es el principio de ocultar los datos internos de un objeto y exponer públicamente solo los métodos necesarios para interactuar con esos datos.
-# Es como el panel de un coche: puedes usar el volante y los pedales (la interfaz pública) sin necesidad de saber cómo funciona el motor o la transmisión (los detalles internos).
+# El encapsulamiento es el principio de ocultar los datos internos de un objeto y 
+# exponer públicamente solo los métodos necesarios para interactuar con esos datos.
+# Es como el panel de un coche: puedes usar el volante y los pedales (la interfaz pública) 
+# sin necesidad de saber cómo funciona el motor o la transmisión (los detalles internos).
 #
 # Beneficios:
 #
-# Seguridad: Evita que el estado del objeto sea modificado de forma accidental o maliciosa desde fuera.
+# Seguridad: Evita que el estado del objeto sea modificado de forma accidental o maliciosa 
+# desde fuera.
 #
-# Integridad: Permite añadir lógica de validación. Por ejemplo, un saldo bancario no debería poder ser negativo.
+# Integridad: Permite añadir lógica de validación. Por ejemplo, un saldo bancario no debería 
+# poder ser negativo.
 #
-# Mantenimiento: Puedes cambiar la implementación interna de la clase sin que afecte al código que la utiliza, siempre y cuando la interfaz pública no cambie.
+# Mantenimiento: Puedes cambiar la implementación interna de la clase sin que afecte al código 
+# que la utiliza, siempre y cuando la interfaz pública no cambie.
 #
 # En Python, el encapsulamiento se logra por convención:
 #
-# _atributo: Se considera "protegido". Es una señal para otros programadores de que no deben acceder a él directamente desde fuera de la clase, aunque técnicamente es posible.
+# _atributo: Se considera "protegido". Es una señal para otros programadores de que no deben acceder 
+# a él directamente desde fuera de la clase, aunque técnicamente es posible.
 #
-# __atributo: Se considera "privado". Python realiza un proceso llamado name mangling (cambia el nombre a _NombreDeClase__atributo), lo que hace muy difícil acceder a él desde fuera y previene colisiones de nombres en la herencia.
+# __atributo: Se considera "privado". Python realiza un proceso llamado name mangling (cambia el nombre 
+# a _NombreDeClase__atributo), lo que hace muy difícil acceder a él desde fuera y previene colisiones de
+# nombres en la herencia.
 #
 # Ejemplo Extendido:
 # Una clase Termostato que mantiene una temperatura dentro de un rango válido.

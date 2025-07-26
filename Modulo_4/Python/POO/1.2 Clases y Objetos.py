@@ -5,8 +5,10 @@
 
 # Objeto (o Instancia): Es la materialización de una clase.
 
-# Si Humano es la clase, entonces un objeto específico como juan_perez (con nombre "Juan Pérez", edad 30) es una instancia de esa clase.
-# Cada objeto tiene su propia copia de los atributos definidos en la clase, pero comparte los mismos métodos.
+# Si Humano es la clase, entonces un objeto específico como juan_perez (con nombre "Juan Pérez", 
+# edad 30) es una instancia de esa clase.
+# Cada objeto tiene su propia copia de los atributos definidos en la clase, pero comparte los mismos 
+# métodos.
 
 # Ejemplo Extendido:
 
@@ -51,6 +53,7 @@ portatil_dev.sistema_operativo = "Ubuntu 24.04"
 portatil_diseno = Portatil()
 portatil_diseno.marca = "Apple"
 portatil_diseno.sistema_operativo = "macOS Sonoma"
+portatil_diseno.bateria_cargada = True  # Este portátil ya tiene la batería cargada
 
 # Interactuamos con el primer portátil
 print(f"\nIntentando encender el portátil del desarrollador ({portatil_dev.marca})...")
@@ -62,7 +65,7 @@ print("-" * 20)
 
 # Interactuamos con el segundo portátil
 print(f"Intentando encender el portátil del diseñador ({portatil_diseno.marca})...")
-portatil_diseno.encender() # También fallará
+portatil_diseno.encender() 
 
 
 

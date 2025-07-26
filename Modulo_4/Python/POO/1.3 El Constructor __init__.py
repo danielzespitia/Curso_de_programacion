@@ -1,8 +1,11 @@
 # El Constructor __init__
 #
-# Crear objetos y asignarles atributos uno por uno (como en el ejemplo anterior) es tedioso y propenso a errores.
-# El método constructor __init__ resuelve esto. Es un método especial que Python ejecuta automáticamente cada vez que se crea una nueva instancia de una clase.
-# Su propósito principal es inicializar los atributos del objeto con los valores que se le pasan como argumentos en el momento de la creación.
+# Crear objetos y asignarles atributos uno por uno (como en el ejemplo anterior) 
+# es tedioso y propenso a errores.
+# El método constructor __init__ resuelve esto. Es un método especial que Python ejecuta 
+# automáticamente cada vez que se crea una nueva instancia de una clase.
+# Su propósito principal es inicializar los atributos del objeto con los valores que se le 
+# pasan como argumentos en el momento de la creación.
 #
 # Ejemplo Extendido:
 # Mejoraremos nuestro Portatil con un constructor para una inicialización más limpia.
