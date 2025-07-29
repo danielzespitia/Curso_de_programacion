@@ -1,0 +1,9 @@
+body{
+    background-color: #22227e; 
+}
+h1 {
+    color: hsl(0, 2%, 9%);
+}
+p {
+    font-size: 18px;
+}
