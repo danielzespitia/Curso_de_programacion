@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mari.css">
+</head>
+
+<body>
+    <div class="container"></div>
+    <h1>mariana valeria quintero pena </h1>
+    <p> tengo 21 años, estoy interesada en adentrarme mas al mundo de la programacion y especializarme en una rama</p>
+    <ol class="personal-info-box"></ol>
+    <li>hobbies 👩‍🍳💑🏋🏻‍♂️</li>
+    <li>reposteria🍪🎂🍰🧁 </li>
+    <li>ir al GYM y boxear 🏋️‍♂️🥊</li>
+    <li>jugar roblox 🖥</li>
+    <img class="img" src="Modulo_2/HTML/Ejercicios de Html/Ejercicio 7/WhatsApp Image 2025-07-29 at 1.08.34 AM.jpeg" alt="mariana">
+      <div class="interactive-box" id="contactBtn">
+            Contáctame
+        </div>
+
+ <div class="social-links-container" id="socialLinks">
+    <a href="https://www.facebook.com/mariana.quintero.3785/"target="_blank" class="social-icon">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+            </div>
+            <script>
+                const contactButton = document.getElementById('contactBtn');
+        const socialLinksContainer = document.getElementById('socialLinks');
+
+        contactButton.addEventListener('click', ()=> {
+
+            socialLinksContainer.classList.toggle('show-social-links');
+        })
+        
+           </script>
+
+ 
+</body>
+
+</html>

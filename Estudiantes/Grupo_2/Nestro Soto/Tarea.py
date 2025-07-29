@@ -1,0 +1,12 @@
+print ("\n\n\n\n")
+print ("The Owl House")
+print ("Te has perdido en el bosque y no recuerdas como llegaste hasta ahi.")
+print ("Caminas un poco y te encuentras con una casa abandonada, parece que nadie ha vivido ahi en años.")
+print("Esta oscureciendo y no tienes como volver a casa,¿Quieres entrar?")
+respuesta= input ("Si o No:")
+if respuesta == "Si" or respuesta == "Sí":
+    print("Has decidido entrar en la casa.")
+    print("Al entrar, te das cuenta de que nadie ha vivido aqui en años.")
+    print("El lugar esta lleno de telarañas y polvo, pero igual decides entrar para pasar la noche.")
+    print ("Mientras exploras, te das cuenta de que hay camaras en varios lugares de la casa.")
+    print("De repente, escuchas a alguien hablando y la camara voltea hacia ti.")

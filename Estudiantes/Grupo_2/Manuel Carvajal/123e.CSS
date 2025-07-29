@@ -1,0 +1,74 @@
+body¨¨{
+    background-color: rgb(red, rgb(0, 255, 0), blue);
+}
+h1,h2,h3,a{
+   color: #eeff33;
+   text-align: center;
+   font-size: 30px;
+   margin: 10px 8px 20px 8px;
+   text-transform: uppercase;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: 200;
+}
+p ¨{
+    color: darkgray;
+    text-align: left;
+    font-size: 30px;
+    margin: 10px 8px 20px 8px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+}
+
+img {
+    width: 50%;
+    border:double white 40px;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+    transition: transform 0.3 ease;
+    position: relative;
+    transform: scale(1.05);
+    color: #eeff33;
+}
+
+
+
+h1 :hover{
+    transform: scale(1.05);
+    color: rgba(0, 0, 0, 0.5);
+}
+button{
+    padding: 20px;
+    border: none;
+    cursor: col-resize;
+    background-color: aqua;
+    transform : scale(1.05);   
+}
+button :hover{
+    background-color: aqua;
+    transform : scale(2);   
+}
+
+.holans img{
+    transform: scale(1.05);
+    width: 50%;
+    border:double white 40px;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    transition: transform 0.3 ease;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+

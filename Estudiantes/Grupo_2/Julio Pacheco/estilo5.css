@@ -1,0 +1,14 @@
+.destacado{
+    color: aqua;
+    background-color: yellow;
+}
+
+.resumen{
+    color: blue;
+}
+
+/* La clase .destacado debe tener fondo amarillo y texto en negrita, no solo color aqua.
+El id #resumen debe usarse en el HTML, no la clase.
+El id #resumen debe tener texto en cursiva y color diferente, no solo color azul.
+Sugerencia: Usa correctamente clases e IDs y aplica los estilos requeridos.
+*/

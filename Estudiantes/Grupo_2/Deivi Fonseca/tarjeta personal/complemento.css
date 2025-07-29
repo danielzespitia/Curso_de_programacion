@@ -1,0 +1,12 @@
+.tarjeta ul:hover{
+    background-color: white;
+    color:blueviolet;
+    transition: background 0.3s, color 0.3;
+}
+.Foto {
+    width:20%;
+    border: 50% ;
+    border: solid black 5px;
+    border-radius: 10px;
+
+}

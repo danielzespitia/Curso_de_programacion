@@ -1,0 +1,14 @@
+.destacado {
+    background-color: yellow;
+    font-weight: bold;
+}
+#resumen{
+    font-style: italic;
+    color: blue;
+}
+
+/*
+ERRORES ENCONTRADOS:
+- El color del texto para #resumen puede ser cualquiera, pero revisa si el examen pide un color específico.
+- El resto de estilos cumple con el examen.
+*/

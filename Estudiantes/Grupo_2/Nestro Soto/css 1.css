@@ -1,0 +1,11 @@
+.dei{
+    width: 50%;
+    border: solid black 5px;
+    border-radius: 30px;
+
+}
+.body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    background-color: white;
+}

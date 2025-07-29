@@ -1,0 +1,182 @@
+/* --- Estilos para el Cuerpo de la Página (Fondo Colorido Animado) --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+
+    /* Define un gradiente de varios colores */
+    background: linear-gradient(45deg, #FF6B6B, #FFD166, #08e643, #4dac7e, #B86BFF);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+/* Define la animación del gradiente */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* --- Estilos para el Contenido Principal de tu Información --- */
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    max-width: 700px;
+    margin: 20px;
+}
+
+
+/* Estilos para tu nombre (h1) */
+h1 {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+/* Estilos para tu imagen */
+.img {
+    width: 30%;
+    border: solid black 10px;
+    border-radius: 75px;
+    height: auto;
+    margin-top: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Estilos para el párrafo de descripción */
+p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* Estilos para las listas (numeradas por defecto) */
+ol {
+    text-align: left;
+    list-style-position: inside;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 1.05em;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+/* Estilo específico para la lista de hobbies, similar a una caja interactiva */
+.personal-info-box {
+    background-color: rgba(0, 123, 255, 0.08);
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    max-width: 400px;
+}
+
+/* --- Estilos para Elementos con Animación al Pasar el Mouse (Existente) --- */
+
+.interactive-box {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 25px;
+    margin: 15px; /* Ajustado para mejor espaciado */
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Animación al pasar el mouse sobre .interactive-box */
+.interactive-box:hover {
+    transform: scale(1.08) translateY(-4px);
+    background-color: #2980b9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    color: #e0f2f7;
+}
+
+/* --- NUEVOS ESTILOS PARA LAS REDES SOCIALES --- */
+
+/* Contenedor de las redes sociales */
+.social-links-container {
+    display: none; /* Oculto por defecto */
+    flex-direction: row; /* Para que los iconos se alineen horizontalmente */
+    flex-wrap: wrap; /* Permite que los iconos se ajusten en múltiples líneas si es necesario */
+    justify-content: center; /* Centra los iconos horizontalmente */
+    gap: 15px; /* Espacio entre los elementos de redes sociales */
+    
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo casi opaco para los enlaces */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    max-width: 500px; /* Ancho máximo del contenedor de enlaces */
+    width: 100%; /* Ocupa todo el ancho disponible hasta el max-width */
+    
+    /* Transición para un efecto suave al mostrar/ocultar */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+/* Clase para mostrar el contenedor de las redes sociales */
+.social-links-container.show-social-links {
+    display: flex; /* Muestra el contenedor */
+    opacity: 1; /* Lo hace completamente visible */
+    transform: translateY(0); /* Lo devuelve a su posición original */
+}
+
+/* Estilos para cada icono/enlace de red social */
+.social-icon {
+    display: flex; /* Para alinear el icono y el texto */
+    align-items: center; /* Centra verticalmente icono y texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #555; /* Color de texto por defecto */
+    font-size: 1.0em;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease; /* Transición para efectos de hover */
+}
+
+.social-icon i {
+    font-size: 1.4em; /* Tamaño del icono */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    color: #007bff; /* Color predeterminado del icono (puede ser sobrescrito) */
+}
+
+/* Efectos al pasar el mouse sobre cada enlace de red social */
+.social-icon:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-3px); /* Pequeño levantamiento */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Colores específicos de marca para los íconos al pasar el mouse */
+.social-icon .fa-instagram:hover { color: #E1306C; } /* Color de Instagram */
+.social-icon .fa-linkedin:hover { color: #0077B5; } /* Color de Facebook */
+.social-icon .fa-github:hover   { color: #333;    } /* Color de GitHub */

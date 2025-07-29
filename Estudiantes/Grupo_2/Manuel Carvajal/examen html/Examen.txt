@@ -1,0 +1,140 @@
+==========================================================
+Examen de HTML y CSS - Ejercicios Prácticos
+==========================================================
+
+Ejercicio 1: Mi Primera Página Web
+----------------------------------
+🎯 Objetivo: Familiarizarse con la estructura básica de un archivo HTML y el uso de las etiquetas más fundamentales.
+
+📋 Requisitos:
+- Crear un nuevo archivo llamado **ejercicio1.html**.
+- Escribir la estructura HTML completa (`<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`).
+- Dentro del `<head>`, añadir una etiqueta `<title>` que diga **"Mi Primer Ejercicio"**.
+- Dentro del `<body>`, añadir un encabezado `<h1>` que diga **"Hola, Mundo!"**.
+- Debajo del `<h1>`, añadir un párrafo `<p>` que diga **"Estoy aprendiendo HTML y es increíble."**.
+- Abrir el archivo en el navegador para ver el resultado.
+
+Ejercicio 2: Listas y Enlaces
+-----------------------------
+🎯 Objetivo: Practicar la creación de listas y cómo convertir texto en hipervínculos.
+
+📋 Requisitos:
+- Crear un nuevo archivo **ejercicio2.html**.
+- Añadir un encabezado `<h2>` que diga **"Mis Sitios Web Favoritos"**.
+- Crear una lista desordenada (`<ul>`) con tres elementos (`<li>`).
+- Cada elemento debe contener un enlace (`<a>`) a un sitio web diferente (ej. Google, YouTube, Wikipedia). El texto del enlace debe ser el nombre del sitio.
+
+✨ Extra (Opcional): Añade una segunda lista ordenada (`<ol>`) con los pasos que sigues para estudiar.
+
+Ejercicio 3: Agregando una Imagen
+---------------------------------
+🎯 Objetivo: Aprender a insertar imágenes locales y externas en una página.
+
+📋 Requisitos:
+- Crear un archivo **ejercicio3.html**.
+- Añadir un `<h1>` que diga **"Mi Animal Favorito"**.
+- Busca una imagen de tu animal favorito en internet.
+- Inserta la imagen usando la etiqueta `<img>` y la URL en el atributo `src`.
+- Añade un texto alternativo descriptivo en el atributo `alt`.
+
+✨ Extra (Opcional): Debajo de la imagen, añade un párrafo (`<p>`) que dé crédito a la fuente de la imagen y convierte el nombre de la fuente en un enlace.
+
+Ejercicio 4: Mi Primera Hoja de Estilos
+---------------------------------------
+🎯 Objetivo: Conectar por primera vez un archivo CSS a un HTML y aplicar estilos básicos.
+
+📋 Requisitos:
+- Crear **ejercicio4.html** y **estilo4.css**.
+- En el HTML, estructura básica con un `<h1>` y dos párrafos `<p>`.
+- Enlaza la hoja de estilos desde el `<head>`.
+- En el CSS:
+  - Cambia el color de fondo del `<body>` a un color claro (ej. #f0f0f0).
+  - Cambia el color del texto del `<h1>` a un color oscuro (ej. navy).
+  - Cambia el tamaño de fuente de los `<p>` a 18px.
+
+Ejercicio 5: Usando Clases y IDs
+-------------------------------
+🎯 Objetivo: Entender la diferencia entre estilos generales, clases y IDs.
+
+📋 Requisitos:
+- Crear **ejercicio5.html** y **estilo5.css**.
+- En el HTML, escribe un `<h1>` y tres párrafos.
+  - Al primer párrafo, asígnale la clase `destacado`.
+  - Al tercer párrafo, asígnale el id `resumen`.
+- En el CSS:
+  - `.destacado`: fondo amarillo y texto en negrita.
+  - `#resumen`: texto en cursiva y color diferente.
+
+Ejercicio 6: El Modelo de Caja (Box Model)
+------------------------------------------
+🎯 Objetivo: Practicar con padding, border y margin.
+
+📋 Requisitos:
+- Crear **ejercicio6.html** y **estilo6.css**.
+- En el HTML, un `<div>` con clase `caja`, que contenga un `<h2>` y un `<p>`.
+- En el CSS, para `.caja`:
+  - `width: 400px;`
+  - `background-color: #eaf2f8;`
+  - `border: 2px solid #3498db;`
+  - `padding: 20px;`
+  - `margin: 30px;`
+
+Ejercicio 7: Tarjeta de Presentación Simple
+-------------------------------------------
+🎯 Objetivo: Combinar HTML y CSS para crear un componente visual común.
+
+📋 Requisitos:
+- Crear **ejercicio7.html** y **estilo7.css**.
+- HTML: `<div class="tarjeta">` con:
+  - `<img>` (puedes usar https://via.placeholder.com/150)
+  - `<h2>` para el nombre
+  - `<p>` para el cargo o profesión
+- CSS para `.tarjeta`:
+  - Borde y color de fondo
+  - Sombra sutil (`box-shadow`)
+  - Ancho fijo y bordes redondeados
+  - Contenido centrado
+
+✨ Extra (Opcional): Haz la imagen de perfil redonda (`border-radius: 50%`).
+
+Ejercicio 8: Estructura Semántica
+---------------------------------
+🎯 Objetivo: Utilizar etiquetas semánticas para la estructura de una página.
+
+📋 Requisitos:
+- Crear **ejercicio8.html** y **estilo8.css**.
+- Maqueta una página usando solo etiquetas semánticas:
+  - `<header>` con `<h1>` "Mi Blog"
+  - `<main>` con un `<p>`
+  - `<footer>` con `<p>` "Copyright © 2025"
+- En el CSS, da un color de fondo diferente a cada sección.
+
+Ejercicio 9: Menú de Navegación Estilizado
+------------------------------------------
+🎯 Objetivo: Estilizar una lista como menú de navegación horizontal.
+
+📋 Requisitos:
+- Crear **ejercicio9.html** y **estilo9.css**.
+- HTML: `<nav>` con `<ul>` y 4 `<li>`, cada uno con un `<a>`.
+- CSS:
+  - Quita viñetas y padding del `<ul>`
+  - `<li>` en línea (`display: inline-block;`)
+  - Estilo a los `<a>`: sin subrayado, con padding y color de fondo
+
+✨ Extra (Opcional): Efecto `:hover` en los enlaces.
+
+Ejercicio 10: Proyecto Final - Mini Página Biográfica
+-----------------------------------------------------
+🎯 Objetivo: Consolidar todos los conocimientos en una sola página.
+
+📋 Requisitos:
+- Crear **biografia.html** y **estilo-bio.css**.
+- La página debe tener:
+  - `<header>` con tu nombre en `<h1>`
+  - `<main>` con:
+    - `<section>` con `<h2>` "Sobre Mí" y una foto tuya (`<img>`)
+    - Otra `<section>` con `<h2>` "Mis Hobbies" y una lista `<ul>`
+  - `<footer>` con tus redes sociales (enlaces de texto)
+- Usa CSS para estilizar toda la página: colores, fuentes, márgenes y clases para las secciones y la foto.
+
+¡Sé creativo!

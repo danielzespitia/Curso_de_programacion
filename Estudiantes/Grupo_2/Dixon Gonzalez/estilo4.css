@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    background: linear-gradient(45deg, #FF6B6B, #FFD166, #08e643, #4dac7e, #B86BFF);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+/* Debas especificar lo del h1 y el p por separado y de paso
+no editaste el tamaño de la letra del p*/

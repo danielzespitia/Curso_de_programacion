@@ -1,0 +1,7 @@
+# escribe un programa que le pida al usuario ingresar una nota entre 0 y 20.
+# y la nota de mayor o igual a 10, el programa debe mostrar "aprobado", de lo contrario, debe mostrar "desaprobado"
+nota = int (input("cual es la nota?"))
+if nota >= 10:
+     print ("aprobado")
+else:
+     print ("desaprobado")

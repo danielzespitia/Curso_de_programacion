@@ -1,0 +1,14 @@
+body{
+    background-color: #f0f0f0 ;
+}
+h1 {
+    color: navy;
+}
+p {
+   font-size: 18px;
+}
+
+/*
+- El archivo CSS cumple con los requisitos del examen.
+- Recuerda que el HTML debe tener el texto solicitado para que los estilos se apliquen correctamente.
+*/

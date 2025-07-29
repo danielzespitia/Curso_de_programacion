@@ -1,0 +1,21 @@
+.tarjeta {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
+    width: 50%;
+    margin: 0 auto 1.5rem auto;
+    padding: 2rem;
+    color: azure;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 40%;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}

@@ -1,0 +1,11 @@
+h1 { color: blue
+    ;}
+body {
+  background-color: #f0f0f0; 
+}
+
+/*
+ERRORES ENCONTRADOS:
+- El nombre del archivo debe ser solo estilo4.css, no "body {.css".
+- El resto de estilos cumple con el examen.
+*/

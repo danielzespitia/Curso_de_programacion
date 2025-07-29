@@ -1,0 +1,11 @@
+.gato {
+    width: 50%;
+    border-radius: 30%;
+    margin-bottom: 1.5rem;
+}
+
+/*
+ERRORES ENCONTRADOS:
+- El archivo CSS cumple con el extra opcional (border-radius), pero revisa si el examen pide un valor específico (por ejemplo, border-radius: 50% para hacerlo completamente redondo).
+- No hay errores graves, pero podrías mejorar el estilo según lo solicitado en el examen.
+*/

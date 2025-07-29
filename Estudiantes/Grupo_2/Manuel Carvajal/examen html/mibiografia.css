@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(16, 131, 131)
+}
+ 
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;  
+}
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    font-size: 22px;  
+}
+
+img :hover{
+    transform: scale(1.05);
+    border-radius: 20px;
+    border: 5px antiquewhite;
+    
+}

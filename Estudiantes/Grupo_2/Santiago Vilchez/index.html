@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Presentación</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="card-container">
+        <div class="card-header">
+            <a href="#" id="profileImgLink">
+                <img src="img/santiago.jpeg" alt="Foto de Perfil" class="profile-img" id="profileImage">
+            </a>
+            <h1>Santiago Jose Vilchez Araviche</h1>
+        </div>
+        
+        <div class="card-body">
+            <p class="description">Soy un joven de 16 años, me gusta ser amable y conversar con los demás sobre temas de mi interés.</p>
+            
+            <div class="interests-section">
+                <h2><b> Mis intereses:</b></h2>
+                <ul>
+                    <li>Fútbol <span>⚽</span></li>
+                    <li>Programación <span>💻</span></li>
+                    <li>Béisbol <span>⚾</span></li>
+                    <li>Correr <span>🏃</span></li>
+                    <li>Animales <span>🐾</span></li>
+                </ul>
+            </div>
+            
+            <button id="changeTextColorBtn">Cambiar Color de Texto</button>
+        </div>
+
+        <div class="card-footer">
+            <div class="social-links">
+                <a href="https://wa.me/584164676344" target="_blank" aria-label="WhatsApp">
+                    <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp--v1.png" alt="WhatsApp" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/santiaxg_htps?igsh=MTk4YXhodDQ0MXh4OQ==" target="_blank" aria-label="Instagram">
+                    <img src="https://img.icons8.com/ios-filled/50/E4405F/instagram-new--v1.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://www.facebook.com/share/178jFAUibT/" target="_blank" aria-label="Facebook">
+                    <img src="https://img.icons8.com/ios-filled/50/1877F2/facebook-new.png" alt="Facebook" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close-button">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

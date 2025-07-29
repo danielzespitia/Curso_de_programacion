@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <link rel="stylesheet" href="xddd.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dixon Andres Gonzalez Delgado</h1>
+        <p>Soy Dixon, tengo 15 años, estoy muy interesado en la programación y siento que si me dedico a aprender puedo llegar a hacer cosas nuevas.</p>
+
+        <ol class="personal-info-box">
+            <li>Hobbies ✍🏼🎮🧩🥁</li>
+            <li>Escuchar Música 🎧</li>
+            <li>Entrenar en el GYM 💪🏼</li>
+            <li>Jugar Fútbol y Básket ⚽🏀</li>
+            <li>Aprender Programación 🧩💻</li>
+            <li>Y gracias a mi Familia estoy donde estoy, los quiero 🤍</li>
+        </ol>
+
+        <img class="img" src="Modulo_2/Media/images/2.JPG" alt="Dixon">
+
+        <ol>"Recuerda que la Constancia es la clave para alcanzar tus metas.."</ol>
+
+        <div class="interactive-box" id="contactBtn">
+            Contáctame
+        </div>
+
+        <div class="social-links-container" id="socialLinks">
+            <a href="https://www.instagram.com/gxzxnz/" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://github.com/dixongonzalez" target="_blank" class="social-icon">
+                <i class="fab fa-git hub"></i> Git hub
+            </a>
+            <a href="https://www.facebook.com/dixon.gonzalez.819018" target="_blank" class="social-icon">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+            </div>
+    <script>
+        // Obtener referencias a los elementos por su ID
+        const contactButton = document.getElementById('contactBtn');
+        const socialLinksContainer = document.getElementById('socialLinks');
+
+        // Añadir un "escuchador de eventos" para cuando se haga clic en el botón
+        contactButton.addEventListener('click', () => {
+            // Alternar la clase 'show-social-links' en el contenedor de redes sociales
+            // Si la clase está, la quita; si no está, la añade.
+            socialLinksContainer.classList.toggle('show-social-links');
+        });
+    </script>
+</body>
+</html>

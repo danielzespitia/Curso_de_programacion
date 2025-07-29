@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una guía completa con ejemplos de las 100 etiquetas HTML más usadas.">
+    <meta name="author" content="DanielZEspitia">
+    <title>Guía Completa de Etiquetas HTML</title>
+    <link rel="icon" href="Modulo_2/Media/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="Modulo_2/CSS/styles/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Guía Interactiva de HTML</h1>
+        <h2>DanielZEspitia</h2>
+        
+        <nav>
+            <ul>
+                <li><a href="#texto">Formato de Texto</a></li>
+                <li><a href="#formularios">Formularios</a></li>
+                <li><a href="#tablas">Tablas</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="Modulo_2/HTML/Etiquetas.html">Etiquetas</a></li>   
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro" class="seccion">
+            <h2>Introducción</h2>
+            <p>
+                Este documento es una demostración práctica de las etiquetas HTML más importantes.
+                Pasa el cursor sobre diferentes elementos para ver más información gracias al atributo <code title="Este es un atributo global">title</code>.
+            </p>
+        </section>
+
+        <article class="seccion">
+            <h3>¿Qué es el HTML Semántico?</h3>
+            <p>Es el uso de etiquetas HTML que transmiten significado sobre el contenido, en lugar de solo sobre su apariencia.</p>
+            <aside>
+                <h4>Dato Curioso</h4>
+                <p>Usar etiquetas semánticas como `<article>`, `<section>`, y `<nav>` mejora drásticamente la accesibilidad para lectores de pantalla.</p>
+            </aside>
+        </article>
+    </main>
+
+    <section id="texto" class="seccion">
+        <h2>Formato de Texto</h2>
+        <p>
+            <strong>¡Importante!</strong> No confundir etiquetas de formato con etiquetas semánticas.
+            Este texto está en <b>negrita</b> pero no es semánticamente importante.
+        </p>
+        <p>
+            Debes leer esto <em>cuidadosamente</em>.
+            El concepto de <i>"responsive design"</i> es fundamental hoy en día.
+        </p>
+        <p>
+            Los resultados mostraron un <mark>aumento del 50%</mark>.
+            Este uso de <u>subrayado</u> no es recomendado.
+        </p>
+        <p>
+            Usa la etiqueta <code>&lt;div&gt;</code> para crear un contenedor.
+            Para copiar, presiona <kbd>Ctrl</kbd> + <kbd>C</kbd>.
+        </p>
+        <p>
+            La fórmula química del agua es H<sub>2</sub>O.
+            Y la de la potencia es E=mc<sup>2</sup>.
+        </p>
+        <blockquote>
+            <p>"El único modo de hacer un gran trabajo es amar lo que haces."</p>
+            <cite>– Steve Jobs</cite>
+        </blockquote>
+        <hr>
+        <pre><code>function saludar(nombre) {
+  return `Hola, ${nombre}`;
+}</code></pre>
+    </section>
+
+    <section class="seccion">
+        <h2>Listas</h2>
+        <h4>Lista Desordenada</h4>
+        <ul>
+            <li>Café</li>
+            <li>Té</li>
+            <li>Leche</li>
+        </ul>
+        <h4>Lista Ordenada</h4>
+        <ol>
+            <li>Despertar</li>
+            <li>Programar</li>
+            <li>Dormir</li>
+        </ol>
+        <h4>Lista de Descripción</h4>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Lenguaje de Marcado de Hipertexto. La estructura de la web.</dd>
+
+            <dt>CSS</dt>
+            <dd>Hojas de Estilo en Cascada. El diseño de la web.</dd>
+        </dl>
+    </section>
+
+    <section id="formularios" class="seccion">
+        <h2>Formularios Interactivos</h2>
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend>Información Personal</legend>
+                <p>
+                    <label for="nombre_usuario">Nombre:</label>
+                    <input type="text" id="nombre_usuario" name="usuario" placeholder="Ej: Juan Pérez" required>
+                </p>
+                <p>
+                    <label for="email_usuario">Email:</label>
+                    <input type="email" id="email_usuario" name="email" required>
+                </p>
+                <p>
+                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nac">
+                </p>
+                <p>
+                    <label for="password_usuario">Contraseña:</label>
+                    <input type="password" id="password_usuario" name="pwd">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferencias</legend>
+                <p>¿Qué temas te interesan?</p>
+                <div>
+                    <input type="checkbox" id="tema1" name="intereses" value="html">
+                    <label for="tema1">HTML</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="tema2" name="intereses" value="css" checked>
+                    <label for="tema2">CSS</label>
+                </div>
+                
+                <p>¿Nivel de experiencia?</p>
+                <div>
+                    <input type="radio" id="nivel1" name="experiencia" value="principiante">
+                    <label for="nivel1">Principiante</label>
+                </div>
+                <div>
+                    <input type="radio" id="nivel2" name="experiencia" value="intermedio">
+                    <label for="nivel2">Intermedio</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Comentarios y Selección</legend>
+                <p>
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                        <optgroup label="Sudamérica">
+                            <option value="ve">Venezuela</option>
+                            <option value="co">Colombia</option>
+                        </optgroup>
+                        <optgroup label="Norteamérica">
+                            <option value="mx">México</option>
+                            <option value="us" disabled>EE.UU. (deshabilitado)</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe algo..."></textarea>
+                </p>
+            </fieldset>
+            
+            <div>
+                <button type="submit">Enviar Datos</button>
+                <button type="reset">Limpiar Formulario</button>
+            </div>
+        </form>
+    </section>
+
+    <section id="tablas" class="seccion">
+        <h2>Tablas</h2>
+        <table>
+            <caption>Horario de Clases</caption>
+            <thead>
+                <tr>
+                    <th>Hora</th>
+                    <th>Lunes</th>
+                    <th>Miércoles</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09:00 - 11:00</td>
+                    <td>HTML Básico</td>
+                    <td>CSS Avanzado</td>
+                </tr>
+                <tr>
+                    <td>11:00 - 13:00</td>
+                    <td colspan="2">Taller de JavaScript</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Horario sujeto a cambios.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section id="multimedia" class="seccion">
+        <h2>Multimedia y Contenido Embebido</h2>
+        <figure>
+            <img style="width: 50%;" src="Modulo_2/Media/images/favicon.png" alt="Una imagen de marcador de posición">
+            <figcaption>Fig. 1 - Ejemplo de una imagen con leyenda.</figcaption>
+        </figure>
+        
+        <h4>Video Nativo</h4>
+        <video controls>
+            <source src="Modulo_2/Media/Video/movie.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+
+        <h4>Audio Nativo</h4>
+        <audio controls>
+            <source src="Modulo_2/Media/Audio/audio.mp3" type="audio/mpeg">
+            Tu navegador no soporta la etiqueta de audio.
+        </audio>
+
+        <h4>Contenido Embebido con Iframe</h4>
+        <iframe src="https://www.youtube.com/watch?v=v9oCITki8pA" title="Video de YouTube" allowfullscreen></iframe>
+    </section>
+
+    <section class="seccion">
+        <h2>Otras Etiquetas Útiles</h2>
+        <details>
+            <summary>Haz clic aquí para ver más detalles</summary>
+            <p>¡Sorpresa! Aquí hay más información que estaba oculta. Es ideal para FAQs.</p>
+        </details>
+        <p>Progreso de la lección: <progress value="75" max="100">75%</progress></p>
+        <p>Uso de almacenamiento: <meter value="0.8">80%</meter></p>
+    </section>
+
+    <footer>
+        <address>
+            Texto por introducir<br>
+            Contacto: <a href="mailto:support@zensolutions.pro">Support@zensolutions.pro</a>.<br>
+            Maracaibo, Venezuela.
+        </address>
+        <p>© <time datetime="2025">2025</time> Guía Completa de HTML. Todos los derechos reservados.</p>
+        <small>Clase N2</small>
+    </footer>
+
+    <script>
+        console.log("Guía HTML cargada y lista para explorar. ¡Todos los estilos vienen de style.css!");
+    </script>
+</body>
+</html>
