@@ -9,6 +9,7 @@
 
 // String: para nombres, descripciones, etc.
 const nombreProducto = "Laptop Pro-Gaming XG-3000";
+console.log(`Nombre del producto: ${nombreProducto}`);
 
 // Number: para precios, cantidades, IDs numéricos.
 let precio = 1499.99;
