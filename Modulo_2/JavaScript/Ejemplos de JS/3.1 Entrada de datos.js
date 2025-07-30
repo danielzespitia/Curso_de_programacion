@@ -7,12 +7,10 @@ let numero = Number(dato);
 if (!isNaN(numero)) {
     console.log("El dato convertido a número es:", numero);
 }
-
 // Verificar si el dato es un número
 if (isNaN(numero)) {
     console.log("El dato ingresado no es un número válido.");
 }
-
 // Convertir el dato ingresado a un booleano
 let booleano = dato.toLowerCase() === "true";
 console.log("El dato convertido a booleano es:", booleano); 
