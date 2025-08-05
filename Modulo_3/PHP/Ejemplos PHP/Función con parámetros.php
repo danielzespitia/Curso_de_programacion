@@ -7,5 +7,6 @@ function saludoPersonalizado($nombre) {
 // Llamamos a la misma función con diferentes datos de entrada (argumentos).
 saludoPersonalizado("Ana");
 saludoPersonalizado("Pedro");
+saludoPersonalizado("Daniel")
 ?>
 

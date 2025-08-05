@@ -1,0 +1,87 @@
+<!-- ======================================================================= -->
+  <!-- SECCIÓN 6: HTML SEMÁNTICO Y DINÁMICO                                    -->
+  <!-- ======================================================================= -->
+
+  <h2>HTML Semántico: La forma correcta de estructurar</h2>
+  <p>
+    HTML5 introdujo nuevas etiquetas para dar un significado (semántica) a las diferentes partes de una página web. Usar estas etiquetas es mejor que usar <code>&lt;div&gt;</code> para todo, porque ayuda a los motores de búsqueda, a las tecnologías de asistencia (lectores de pantalla) y a otros desarrolladores a entender la estructura de tu contenido.
+  </p>
+
+  <!-- 30. <div>: Es la etiqueta de bloque más genérica. Es un "divisor" o contenedor sin
+       ningún significado semántico. Se usa para agrupar elementos y aplicarles estilos CSS
+       o para manipulación con JavaScript. Es el bloque de construcción fundamental. -->
+
+  <div class="non-semantic-example">
+    <h3>Ejemplo NO Semántico (usando solo divs)</h3>
+    <div class="header">
+      <h1>Logo de la Empresa</h1>
+      <div class="nav">...menú...</div>
+    </div>
+    <div class="main-content">
+      <div class="article">...contenido principal...</div>
+    </div>
+    <div class="footer">...pie de página...</div>
+  </div>
+
+  <!-- Etiquetas Semánticas como <header>, <nav>, <main>, <article>, <section>, <aside>, <footer> -->
+  <div class="semantic-example">
+    <h3>Ejemplo Semántico (¡La forma correcta!)</h3>
+    
+    <!-- <header>: Representa el encabezado de una página o sección. Suele contener el logo,
+         título principal y la navegación. -->
+    <header>
+      <h1>Logo de la Empresa</h1>
+      <!-- <nav>: Representa una sección de enlaces de navegación. -->
+      <nav>
+        <a href="#">Inicio</a> | <a href="#">Servicios</a> | <a href="#">Contacto</a>
+      </nav>
+    </header>
+
+    <!-- <main>: Representa el contenido principal y único del <body>. Solo debe haber uno por página. -->
+    <main>
+      <!-- <article>: Representa un contenido independiente y autocontenido (p. ej., un post de blog,
+           un artículo de noticias, un comentario). -->
+      <article>
+        <h2>Título del Artículo</h2>
+        <!-- <section>: Representa una sección genérica de un documento. Agrupa contenido temáticamente. -->
+        <section>
+          <h3>Introducción</h3>
+          <p>Este es el primer párrafo del artículo...</p>
+        </section>
+        <section>
+          <h3>Desarrollo</h3>
+          <p>Este es el segundo párrafo del artículo...</p>
+        </section>
+      </article>
+    </main>
+
+    <!-- <footer>: Representa el pie de página de una página o sección. Suele contener
+         información de copyright, enlaces a redes sociales, etc. -->
+    <footer>
+      <p>&copy; 2024 Mi Empresa. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+  <h2>Haciendo HTML "Dinámico" con JavaScript</h2>
+  <p>
+    HTML por sí solo es un lenguaje de marcado estático. Para añadir interactividad y comportamiento dinámico (cosas que cambian sin recargar la página), se necesita JavaScript.
+  </p>
+  
+  <p id="parrafo-dinamico">Este es un texto inicial.</p>
+  <button onclick="cambiarTexto()">Haz Clic Para Cambiar el Texto</button>
+
+  <!-- <script>: Se usa para incrustar o referenciar código JavaScript. -->
+  <script>
+    // Esta función de JavaScript se ejecuta cuando se hace clic en el botón de arriba.
+    function cambiarTexto() {
+      // document.getElementById() es un método de JS para encontrar un elemento HTML por su 'id'.
+      const parrafo = document.getElementById('parrafo-dinamico');
+      // .innerHTML permite cambiar el contenido HTML de ese elemento.
+      parrafo.innerHTML = "¡El texto ha cambiado gracias a JavaScript!";
+      parrafo.style.color = '#28a745';
+      parrafo.style.fontWeight = 'bold';
+    }
+  </script>
+
+</body>
+</html>

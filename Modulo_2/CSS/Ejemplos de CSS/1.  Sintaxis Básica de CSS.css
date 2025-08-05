@@ -1,0 +1,34 @@
+/*
+================================================================================
+1. SINTAXIS BÁSICA DE CSS
+================================================================================
+
+Una regla de CSS consta de dos partes principales: un "selector" y un "bloque
+de declaración".
+
+    selector {
+        propiedad: valor;
+        otra-propiedad: otro-valor;
+    }
+
+-   **Selector**: Apunta al elemento HTML que quieres estilizar. Puede ser un
+    nombre de etiqueta (como `p` para párrafos), una clase (como `.mi-clase`),
+    un ID (como `#mi-id`), etc.
+
+-   **Bloque de Declaración**: Contiene una o más declaraciones separadas por
+    punto y coma, y está envuelto en llaves `{}`.
+
+-   **Declaración**: Consiste en una "propiedad" y un "valor", separados por
+    dos puntos.
+    -   **Propiedad**: Es el atributo de estilo que deseas cambiar (ej: `color`,
+        `font-size`, `background-color`).
+    -   **Valor**: Es el ajuste que le das a esa propiedad (ej: `blue`, `16px`, `#FFFFFF`).
+*/
+
+/* Ejemplo de una regla CSS básica que afecta a todos los párrafos (`p`) */
+p {
+    color: #333333; /* Cambia el color del texto a un gris oscuro */
+    font-size: 16px; /* Establece el tamaño de la fuente a 16 píxeles */
+}
+
+

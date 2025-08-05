@@ -1,0 +1,32 @@
+/*================================================================================
+5. PROPIEDADES DE FUENTE (TIPOGRAFÍA)
+================================================================================
+
+Estas propiedades controlan la apariencia del texto.
+*/
+.articulo-blog {
+    /* `font-family`: Especifica la fuente. Se listan varias como respaldo. */
+    font-family: 'Lora', 'Times New Roman', serif;
+
+    /* `font-size`: Define el tamaño del texto. */
+    font-size: 1.1rem; /* Un 10% más grande que la fuente base */
+
+    /* `font-weight`: Define el grosor de la fuente (normal, bold, o números 100-900). */
+    font-weight: 400; /* 400 es normal, 700 es bold */
+
+    /* `font-style`: Define el estilo (normal, italic, oblique). */
+    font-style: normal;
+
+    /* `line-height`: Define la altura de la línea, afectando el espacio vertical entre líneas.
+       Un valor sin unidad (como 1.6) es recomendado, ya que es relativo al font-size. */
+    line-height: 1.6;
+
+    /* `text-align`: Alineación del texto (left, right, center, justify). */
+    text-align: justify;
+
+    /* `text-decoration`: Añade o quita decoraciones (underline, overline, line-through). */
+    text-decoration: none; /* Útil para quitar el subrayado de enlaces */
+}
+
+
+/*

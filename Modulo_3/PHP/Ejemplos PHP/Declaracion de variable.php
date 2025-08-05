@@ -2,8 +2,9 @@
 
 // ## 1. Las variables comienzan con el signo de dólar ($) ##
 // ## 2. PHP infiere el tipo de dato automáticamente ##
-
+// ## 3. Reglas para nombrar variables ##
 // PHP ve las comillas y sabe que $nombre es un String.
+
 $nombre = "Carlos Rivas";
 
 // PHP ve el número sin decimales y sabe que $edad es un Integer.
@@ -13,7 +14,7 @@ $edad = 28;
 $altura = 1.75;
 
 // PHP ve la palabra 'true' y sabe que $esDesarrollador es un Boolean.
-$esDesarrollador = true;
+$esDesarrollador =  true;
 
 
 // Imprimimos los valores y sus tipos para verificar la inferencia de PHP.

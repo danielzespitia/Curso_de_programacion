@@ -1,0 +1,40 @@
+
+  <!-- ======================================================================= -->
+  <!-- SECCIÓN 5: FORMULARIOS                                                  -->
+  <!-- ======================================================================= -->
+
+  <h3>Formularios</h3>
+  <!-- 24. <form>: Contenedor para controles de formulario. -->
+  <!-- 'action' es la URL a la que se envían los datos. 'method' es el método HTTP (GET o POST). -->
+  <form action="/procesar-formulario" method="post">
+    <!-- 25. <label>: Etiqueta descriptiva para un <input>. Mejora la accesibilidad.
+         Al hacer clic en el label, el foco se pone en el input asociado (a través del 'for' y 'id'). -->
+    <label for="nombre">Nombre:</label><br>
+    
+    <!-- 26. <input>: El elemento de formulario más versátil. -->
+    <!-- 'type' define el tipo de control (texto, email, contraseña, checkbox, radio, etc.). -->
+    <input type="text" id="nombre" name="nombre_usuario"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email_usuario"><br>
+
+    <!-- 27. <textarea>: Para campos de texto multilínea. -->
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje_usuario" rows="4" cols="50"></textarea><br>
+
+    <!-- 28. <select> y <option>: Crean una lista desplegable. -->
+    <label for="pais">País:</label><br>
+    <select id="pais" name="pais">
+      <option value="mx">México</option>
+      <option value="es">España</option>
+      <option value="ar">Argentina</option>
+    </select><br><br>
+
+    <!-- 29. <button>: Un botón cliqueable. -->
+    <!-- 'type="submit"' indica que el botón enviará el formulario. -->
+    <button type="submit">Enviar</button>
+  </form>
+
+  <hr>
+
+  

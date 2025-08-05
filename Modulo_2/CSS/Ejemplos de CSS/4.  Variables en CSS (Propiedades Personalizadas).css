@@ -1,0 +1,43 @@
+/*================================================================================
+4. VARIABLES EN CSS (PROPIEDADES PERSONALIZADAS)
+================================================================================
+
+Las variables te permiten almacenar valores (como colores o tamaños) para
+reutilizarlos en todo tu CSS. Esto facilita el mantenimiento y la consistencia.
+
+-   Se declaran con un nombre que empieza con dos guiones (`--nombre-variable`).
+-   Se suelen declarar en el selector `:root`, que representa la raíz del
+    documento (la etiqueta <html>), para que estén disponibles globalmente.
+-   Se usan con la función `var()`.
+*/
+
+:root {
+    /* Declaración de variables globales */
+    --color-primario: #3498db;
+    --color-secundario: #2ecc71;
+    --color-texto: #333;
+    --fuente-principal: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --tamano-fuente-base: 1rem; /* 1rem = tamaño de fuente del elemento raíz (usualmente 16px) */
+    --espaciado-estandar: 15px;
+}
+
+/* Ahora usamos las variables */
+body {
+    font-family: var(--fuente-principal);
+    color: var(--color-texto);
+    font-size: var(--tamano-fuente-base);
+}
+
+a {
+    /* Estilo para todos los enlaces */
+    color: var(--color-primario);
+}
+
+.boton-exito {
+    background-color: var(--color-secundario);
+    padding: var(--espaciado-estandar);
+    color: white;
+}
+
+
+/*

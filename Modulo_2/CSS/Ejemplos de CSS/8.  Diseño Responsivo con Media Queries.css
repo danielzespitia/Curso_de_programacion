@@ -1,0 +1,75 @@
+/*================================================================================
+8. DISEÑO RESPONSIVO CON MEDIA QUERIES
+================================================================================
+
+El diseño responsivo asegura que tu página se vea bien en todos los dispositivos
+(móviles, tabletas, computadoras de escritorio). La herramienta principal para
+lograrlo son las "Media Queries".
+
+Una Media Query te permite aplicar un bloque de CSS solo si se cumple una
+condición específica, generalmente relacionada con el ancho de la pantalla.
+
+La estrategia más común es "Mobile First" (Primero el Móvil): diseñas primero
+para pantallas pequeñas y luego usas Media Queries para adaptar el diseño a
+pantallas más grandes.
+*/
+
+/* --- ESTILOS BASE (Mobile First) --- */
+/* Estos son los estilos por defecto, para pantallas pequeñas */
+
+.contenedor-principal {
+    width: 100%;
+    padding: 15px;
+}
+
+.columnas {
+    display: block; /* En móviles, las columnas se apilan una sobre otra */
+}
+
+.columna {
+    width: 100%; /* Cada columna ocupa todo el ancho */
+    margin-bottom: 15px;
+}
+
+/* --- MEDIA QUERIES para pantallas más grandes --- */
+
+/* Para tabletas y pantallas más grandes (ej: a partir de 768px) */
+@media (min-width: 768px) {
+    /* Los estilos aquí dentro SOLO se aplicarán si el ancho de la ventana
+       es de 768px O MÁS. */
+
+    .contenedor-principal {
+        max-width: 720px; /* Limita el ancho en pantallas más grandes */
+        margin: 0 auto; /* Centra el contenedor */
+    }
+
+    .columnas {
+        display: flex; /* Usamos Flexbox para poner las columnas en fila */
+        gap: 20px; /* Espacio entre columnas */
+    }
+
+    .columna {
+        width: 50%; /* Cada columna ocupa el 50% del espacio */
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-size: 3.5em; /* Hacemos el título más grande en pantallas grandes */
+    }
+}
+
+/* Para pantallas de escritorio (ej: a partir de 1024px) */
+@media (min-width: 1024px) {
+    /* Estilos para pantallas de 1024px o más */
+
+    .contenedor-principal {
+        max-width: 960px; /* Hacemos el contenedor un poco más ancho */
+    }
+
+    /* Si tuviéramos 3 columnas, podríamos hacer que cada una ocupe un 33.33% */
+    /* .columna {
+        width: 33.33%;
+    } */
+}
+
+/*

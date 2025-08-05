@@ -1,0 +1,31 @@
+/*================================================================================
+6. COLORES Y FONDOS
+================================================================================
+
+Estas propiedades controlan los colores del texto, fondos, bordes, etc.
+*/
+.panel-informativo {
+    /* `color`: Establece el color del texto. */
+    color: white;
+
+    /* `background-color`: Establece un color de fondo sólido. */
+    background-color: #2c3e50;
+
+    /* `background-image`: Establece una imagen de fondo. Puede ser una URL o un gradiente. */
+    background-image: linear-gradient(to right, #34495e, #2c3e50);
+
+    /* `background-size`: Define el tamaño de la imagen de fondo. */
+    background-size: cover; /* La imagen cubre toda la caja, puede recortarse */
+
+    /* `background-position`: Define la posición inicial de la imagen de fondo. */
+    background-position: center center;
+
+    /* `opacity`: Define la transparencia de un elemento (de 0.0 a 1.0). */
+    opacity: 0.95;
+
+    padding: 25px;
+    border-radius: 8px;
+}
+
+
+/*

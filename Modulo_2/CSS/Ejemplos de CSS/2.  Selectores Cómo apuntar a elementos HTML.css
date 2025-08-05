@@ -1,0 +1,89 @@
+/*================================================================================
+2. SELECTORES: CÓMO APUNTAR A ELEMENTOS HTML
+================================================================================
+
+Los selectores son una de las partes más importantes de CSS. Definen a qué
+elementos se aplicarán los estilos.
+
+----------------------------------
+a) Selector de Etiqueta (o Tipo)
+----------------------------------
+Apunta a todos los elementos de un tipo de etiqueta HTML específico.
+*/
+body {
+    /* Estilos para la etiqueta <body>, que contiene toda la página */
+    font-family: Arial, sans-serif; /* Fuente para todo el documento */
+}
+
+h1 {
+    /* Estilos para todos los encabezados de nivel 1 */
+    font-size: 2.5em; /* Tamaño de fuente relativo al elemento padre */
+    color: #1a1a1a;
+}
+
+/*
+----------------------------------
+b) Selector de Clase
+----------------------------------
+Apunta a elementos que tienen un atributo `class` específico. Se denota con
+un punto `.` seguido del nombre de la clase. Es reutilizable; varios elementos
+pueden tener la misma clase.
+*/
+.boton-primario {
+    /* Estilos para cualquier elemento con class="boton-primario" */
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
+.texto-destacado {
+    /* Otra clase, para destacar texto */
+    font-weight: bold;
+    color: #d9534f;
+}
+
+/*
+----------------------------------
+c) Selector de ID
+----------------------------------
+Apunta a UN ÚNICO elemento que tiene un atributo `id` específico. Se denota
+con una almohadilla `#` seguida del nombre del ID. Un ID debe ser único en
+toda la página.
+*/
+#encabezado-principal {
+    /* Estilos para el elemento con id="encabezado-principal" */
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/*
+----------------------------------
+d) Agrupación de Selectores
+----------------------------------
+Puedes aplicar los mismos estilos a múltiples selectores separándolos por comas.
+Esto evita la repetición de código.
+*/
+h1, h2, h3, h4, h5, h6 {
+    /* Aplica estos estilos a todos los niveles de encabezados */
+    font-family: 'Georgia', serif;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+/*
+----------------------------------
+e) Selectores Descendientes
+----------------------------------
+Apunta a un elemento que está dentro de otro. Se escriben los selectores
+separados por un espacio.
+*/
+#menu-navegacion li {
+    /* Apunta a todos los `li` que están DENTRO del elemento con id="menu-navegacion" */
+    display: inline-block; /* Coloca los elementos de la lista en línea */
+    margin-right: 15px;
+}
+
+/*

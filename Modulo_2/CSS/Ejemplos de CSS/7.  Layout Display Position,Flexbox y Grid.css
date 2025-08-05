@@ -1,0 +1,40 @@
+/*================================================================================
+7. LAYOUT: DISPLAY, POSITION, FLEXBOX Y GRID
+================================================================================
+
+Estas propiedades son cruciales para estructurar y posicionar los elementos
+en la página.
+
+----------------------------------
+a) Display
+----------------------------------
+La propiedad `display` define cómo se comporta un elemento. Los valores más
+comunes son:
+- `block`: El elemento ocupa todo el ancho disponible y empieza en una nueva línea (ej: `div`, `p`, `h1`).
+- `inline`: El elemento solo ocupa el ancho que necesita y no empieza en una nueva línea (ej: `span`, `a`, `strong`).
+- `inline-block`: Como `inline`, pero puedes definirle `width`, `height`, `margin` y `padding`.
+- `none`: Oculta el elemento por completo.
+- `flex`: Activa el modelo de layout Flexbox.
+- `grid`: Activa el modelo de layout Grid.
+
+----------------------------------
+b) Flexbox
+----------------------------------
+Es un modelo de layout unidimensional ideal para alinear elementos en una fila
+o una columna.
+*/
+.contenedor-flex {
+    display: flex; /* Convierte el elemento en un contenedor flex */
+    justify-content: space-between; /* Distribuye los hijos a lo largo del eje principal */
+    align-items: center; /* Alinea los hijos a lo largo del eje secundario */
+    gap: 10px; /* Espacio entre los elementos hijos */
+}
+
+/* Los elementos dentro de .contenedor-flex ahora son "flex items". */
+.item-flex {
+    flex-grow: 1; /* Permite que el item crezca para ocupar el espacio disponible */
+    /* flex-basis: 200px;  Define el tamaño inicial del item */
+}
+
+
+/*

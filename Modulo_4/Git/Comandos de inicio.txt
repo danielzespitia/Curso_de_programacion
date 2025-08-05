@@ -1,5 +1,0 @@
-Git Clone (Aqui colocar el link del repositorio)
-
-git config user.name ""
-
-git config user.email ""

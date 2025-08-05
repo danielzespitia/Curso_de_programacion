@@ -1,0 +1,31 @@
+/* ================================================================================
+3. EL MODELO DE CAJA (BOX MODEL)
+================================================================================
+
+Cada elemento en una página web es una caja rectangular. El modelo de caja
+describe cómo se compone esta caja. Consta de cuatro partes, de adentro hacia
+afuera:
+
+1.  **Content (Contenido)**: El texto, imagen, etc. del elemento.
+2.  **Padding (Relleno)**: Un espacio transparente alrededor del contenido,
+    dentro del borde.
+3.  **Border (Borde)**: Una línea que rodea el padding y el contenido.
+4.  **Margin (Margen)**: Un espacio transparente que rodea el borde, separando
+    la caja de otros elementos.
+*/
+.caja-ejemplo {
+    /* Suponiendo que este elemento es un <div> con class="caja-ejemplo" */
+    width: 300px; /* Ancho del contenido */
+    padding: 20px; /* 20px de relleno en los 4 lados */
+    border: 2px solid #3498db; /* Borde sólido de 2px de grosor y color azul */
+    margin: 30px; /* 30px de margen exterior en los 4 lados */
+    background-color: #ecf0f1; /* Color de fondo para ver el área del padding */
+
+    /* Por defecto, width + padding + border = ancho total visible.
+       box-sizing: border-box; hace que el padding y el borde se incluyan
+       dentro del 'width' especificado, lo cual es más intuitivo. */
+    box-sizing: border-box;
+}
+
+
+/*

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- 
+  ================================================================================================
+  DECLARACIÓN DOCTYPE
+  ================================================================================================
+  La línea de arriba, <!DOCTYPE html>, es la primera que debe aparecer en tu documento.
+  No es una etiqueta HTML, sino una "declaración" que le dice al navegador qué versión de HTML
+  está utilizando. En este caso, 'html' sin ninguna versión significa que estamos usando
+  la última versión estándar: HTML5. Es crucial para que el navegador renderice la página
+  correctamente en "modo estándar".
+-->
+
+<html lang="es">
+<!--
+  ================================================================================================
+  ETIQUETA <html>
+  ================================================================================================
+  Esta es la etiqueta raíz de toda página HTML. Todo el contenido debe estar dentro de ella.
+  El atributo 'lang="es"' es importante para la accesibilidad y los motores de búsqueda,
+  ya que especifica que el idioma principal del contenido de la página es el español.
+-->
+
+<head>
+  <!--
+    ================================================================================================
+    SECCIÓN <head>
+    ================================================================================================
+    La sección <head> (cabeza) contiene "metadatos" sobre la página. Esta información no es
+    visible directamente en el contenido principal de la página, pero es vital para el navegador,
+    los motores de búsqueda (SEO) y cómo se muestra la página.
+  -->
+
+  <!-- 1. ETIQUETA <meta> -->
+  <!-- Define metadatos que no pueden ser definidos por otras etiquetas. -->
+  <meta charset="UTF-8">
+  <!-- El atributo 'charset="UTF-8"' es el más importante. Asegura que el navegador
+       interprete correctamente todos los caracteres, incluyendo acentos y símbolos especiales
+       como 'ñ' o 'á'. -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Esta etiqueta es esencial para el diseño responsivo (responsive design).
+       Le dice al navegador que el ancho de la página debe ajustarse al ancho del dispositivo
+       y que la escala inicial debe ser del 100%. -->
+
+  <!-- 2. ETIQUETA <title> -->
+  <!-- Define el título de la página. Este texto aparece en la pestaña del navegador y es
+       muy importante para el SEO. -->
+  <title>Guía Completa de HTML</title>
+
+  <!-- 3. ETIQUETA <link> -->
+  <!-- Se usa para vincular recursos externos, principalmente hojas de estilo CSS. -->
+  <style>
+    /* Normalmente, los estilos CSS se colocan en un archivo externo y se vinculan así:
+      <link rel="stylesheet" href="styles.css">
+      
+      Para este ejemplo, usaré la etiqueta <style> para incluir algo de CSS directamente
+      y hacer la guía más legible.
+    */
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    h1, h2, h3 {
+      color: #0056b3;
+    }
+    code {
+      background-color: #e3e3e3;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+    .semantic-example, .non-semantic-example {
+      border: 2px solid #ccc;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+    .semantic-example { border-color: #28a745; }
+    .non-semantic-example { border-color: #dc3545; }
+  </style>
+
+</head>
+<body>
+    
+</body>
+
+</html>
