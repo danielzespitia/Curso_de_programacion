@@ -3,6 +3,7 @@
 int main() {
     // Declaración de una variable: tipo_dato nombre_variable;
     int x;
+    char letra = 'A'; // Declaración de una variable de tipo char.
 
     // Inicialización: Asignar un valor por primera vez.
     x = 10; // Se le asigna el valor 10.

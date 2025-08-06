@@ -1,12 +1,12 @@
 -- ###################################################################################
 -- #                                                                                 #
--- #                     CURSO DETALLADO DE SQL CON MYSQL                              #
+-- #                     CURSO DETALLADO DE SQL CON MYSQL                            #
 -- #                                                                                 #
 -- #   Bienvenido a este curso práctico de SQL. Este script está diseñado para       #
 -- #   ser tanto una guía de referencia como un tutorial interactivo. Cada           #
 -- #   sección explica un concepto clave de SQL y proporciona ejemplos de código     #
 -- #   que puedes ejecutar directamente en tu gestor de base de datos MySQL.         #
--- #                                                                                 #                                                            #
+-- #                                                                                 #                                                            
 -- #                                                                                 #
 -- ###################################################################################
 
@@ -83,6 +83,7 @@ CREATE TABLE Orders (
     customer_id INT -- Esta columna relacionará el pedido con un cliente.
 );
 
+
 CREATE TABLE Shippings (
     shipping_id INT PRIMARY KEY,
     status VARCHAR(100),
@@ -123,7 +124,7 @@ DROP COLUMN age;
 */
 
 -- Para el propósito del curso, no la ejecutaremos, pero así es como se haría:
--- DROP TABLE Shippings;
+DROP TABLE Shippings;
 
 
 -- ###################################################################################
