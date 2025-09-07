@@ -4,6 +4,8 @@ Bienvenido/a al repositorio del **Curso de Programación**. Aquí encontrarás t
 
 ## Estructura del Curso
 
+https://github.com/users/Khalid4712/emails/390151160/confirm_verification/06d375312ecfea4502d37aafb6f494f0f562746c?utm_campaign=github-email-verification&utm_content=html&utm_medium=email&utm_source=verification-email
+
 - **Módulo 1: Python**
   - Fundamentos de programación y lógica básica usando Python.
   - Ejercicios prácticos y ejemplos comentados.
