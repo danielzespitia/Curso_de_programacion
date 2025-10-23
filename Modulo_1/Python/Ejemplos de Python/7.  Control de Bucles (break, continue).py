@@ -14,7 +14,9 @@ for numero in range(10):
 for numero in range(10):
     if numero % 2 == 0:
         print(f"{numero} es par, saltando a la siguiente iteración.")
-        continue  # Salta el resto del código y pasa al siguiente número
+        continue 
+        print("Hola") 
+        # Salta el resto del código y pasa al siguiente número
     print(f"{numero} es impar, procesando este número.")
     
 # Bucle while con break
@@ -33,6 +35,7 @@ while contador < 10:
     if contador % 3 == 0:
         print(f"{contador} es múltiplo de 3, saltando a la siguiente iteración.")
         continue  # Salta el resto del código y pasa al siguiente número
+        print("Hola")
     print(f"Contador actual: {contador}")
     
 # Bucle for con break y continue

@@ -19,3 +19,7 @@ def calcular_area_circulo(radio):
 area_circulo = calcular_area_circulo(5)  # Calcula el área de un círculo con radio 5
 print(f"El área del círculo con radio 5 es: {area_circulo}")  # Imprime: El área del círculo con radio 5 es: 78.53981633974483
 
+numero1 = math.pow(2, 3)  # Calcula 2 elevado a la potencia de 3
+numero2 = math.cos(math.pi / 4)  # Calcula el coseno de π/4
+print(f"2 elevado a la potencia de 3 es: {numero1}")  # Imprime: 2 elevado a la potencia de 3 es: 8.0
+print(f"El coseno de π/4 es: {numero2}")  # Imprime: El coseno de π/4 es: 0.7071067811865476

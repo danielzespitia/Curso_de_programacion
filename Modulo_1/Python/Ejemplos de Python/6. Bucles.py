@@ -5,11 +5,20 @@
 for numero in range(5):
     print(f"Número actual: {numero}")
 
+
+
 # Recorrer una lista de nombres
 nombres = ["Ana", "Luis", "Marta"]
 
-for nombre in nombres:
-    print(f"Hola, {nombre}")
+for i in nombres:
+    print(f"Hola, {i}")
+    
+    
+    
+    
+    
+    
+    
     
 # Bucle for: Se usa para "iterar" o recorrer una secuencia de elementos
 # (como una lista de nombres o un rango de números). Se sabe de antemano cuántas veces se va a repetir

@@ -7,7 +7,7 @@ int main() {
 
     // La variable 'dia' se evalúa.
     switch (dia) {
-        case 1: // Si 'dia' es 1
+        case '1': // Si 'dia' es 1
             std::cout << "Elegiste Lunes." << std::endl;
             break; // 'break' es crucial para salir del switch. Sin él, se ejecutarían los casos siguientes.
         case 2: // Si 'dia' es 2

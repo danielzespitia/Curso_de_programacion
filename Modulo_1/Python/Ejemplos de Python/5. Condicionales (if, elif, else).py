@@ -1,9 +1,13 @@
 # Permiten ejecutar un bloque de código solo si se cumple una condición. if es el primero, elif (else if) 
 # permite añadir más condiciones, y else se ejecuta si ninguna de las anteriores es verdadera.
 
-edad = 18
+edad = 17
 if edad < 18:
     print("Eres menor de edad.")
+    a=12
+    b=12
+    c=a+b
+    print(c)
 elif edad == 18:
     print("¡Justo tienes 18 años!")
 else:
