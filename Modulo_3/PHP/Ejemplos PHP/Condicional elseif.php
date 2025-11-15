@@ -6,10 +6,12 @@ $horaActual = 1;
 
 if ($horaActual < 12) {
     echo "¡Buenos días!\n";
-} elseif ($horaActual < 18) {
+} 
+elseif ($horaActual < 18) {
     // Esta condición se revisa solo si la primera ($horaActual < 12) fue falsa.
     echo "¡Buenas tardes!\n";
-} else {
+} 
+else {
     // Este bloque se ejecuta si ninguna de las condiciones anteriores fue verdadera.
     echo "¡Buenas noches!\n";
 }

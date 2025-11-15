@@ -19,7 +19,9 @@ Crea un programa que solicite al usuario dos números. El programa debe calcular
 📚 Temas: Operadores, iostream, Librería cmath.
 
 🔍 Ejercicio 3: Condicionales if-else
-Desarrolla un programa que pida al usuario su edad. El programa debe utilizar una estructura condicional if-else para determinar si el usuario es mayor de edad (18 años o más) y mostrar un mensaje apropiado en la pantalla.
+Desarrolla un programa que pida al usuario su edad. El programa debe utilizar una 
+estructura condicional if-else para determinar si el usuario es mayor de edad (18 años o más) 
+y mostrar un mensaje apropiado en la pantalla.
 
 📚 Temas: Condicionales, Operadores, Variables.
 
