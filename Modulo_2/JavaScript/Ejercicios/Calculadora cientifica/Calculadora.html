@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Científica</title>
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Enlace al script de JavaScript (con defer para que cargue después del HTML) -->
+    <script src="calculadora.js" defer></script>
+</head>
+<body>
+    
+    <!-- Contenedor para el título y la calculadora -->
+    <div class="main-container">
+        <h1 class="main-title">Calculadora del Curso</h1>
+
+        <!-- Contenedor principal de la calculadora -->
+        <div class="calculator-grid">
+            <!-- Pantalla de la calculadora -->
+            <div class="output">
+                <!-- Muestra la operación anterior o el historial -->
+                <div data-previous-operand class="previous-operand"></div>
+                <!-- Muestra la operación y el resultado actual -->
+                <div data-current-operand class="current-operand"></div>
+            </div>
+            
+            <!-- Botones de la calculadora (Diseño simplificado) -->
+            <button data-clear class="func-btn">AC</button>
+            <button data-delete class="func-btn">DEL</button>
+            <button data-operation="%" class="op-btn">%</button>
+            <button data-operation="^" class="op-btn">^</button>
+            
+            <button data-function="cos" class="func-btn">cos</button>
+            <button data-function="tan" class="func-btn">tan</button>
+            <button data-function="√" class="func-btn">√</button>
+            <button data-operation="÷" class="op-btn">÷</button>
+            
+            <button data-number="7">7</button>
+            <button data-number="8">8</button>
+            <button data-number="9">9</button>
+            <button data-operation="×" class="op-btn">×</button>
+
+            <button data-number="4">4</button>
+            <button data-number="5">5</button>
+            <button data-number="6">6</button>
+            <button data-operation="-" class="op-btn">-</button>
+
+            <button data-number="1">1</button>
+            <button data-number="2">2</button>
+            <button data-number="3">3</button>
+            <button data-operation="+" class="op-btn">+</button>
+            
+            <button data-number="0" class="span-two-h">0</button>
+            <button data-number=".">.</button>
+            <button data-equals class="op-btn">=</button>
+            
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>08 - Interactividad</title>
+</head>
+<body>
+    <h1>Elementos Interactivos Nativos</h1>
+
+    <h2>Details y Summary (Acordeón)</h2>
+    <details>
+        <summary>Haz clic para ver más información</summary>
+        <p>Este contenido estaba oculto. Es muy útil para secciones de preguntas frecuentes (FAQ).</p>
+    </details>
+
+    <hr>
+
+    <h2>Dialog (Ventana Modal)</h2>
+    <button onclick="document.getElementById('miModal').showModal()">Abrir Modal</button>
+
+    <dialog id="miModal">
+        <h3>¡Hola!</h3>
+        <p>Soy una ventana modal nativa de HTML.</p>
+        <button onclick="document.getElementById('miModal').close()">Cerrar</button>
+    </dialog>
+
+    <hr>
+
+    <h2>Progress (Barra de Progreso)</h2>
+    <label for="descarga">Descargando archivo:</label>
+    <progress id="descarga" value="70" max="100">70%</progress>
+
+    <hr>
+
+    <h2>Meter (Medidor)</h2>
+    <label for="disco">Uso de disco:</label>
+    <meter id="disco" value="0.6" min="0" max="1" low="0.3" high="0.8" optimum="0.2">60%</meter>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>04 - Flexbox y Grid CSS</title>
+    <link rel="stylesheet" href="04_Flexbox_y_Grid.css">
+</head>
+<body>
+    <h1>Layouts Modernos</h1>
+
+    <h2>Flexbox (Unidimensional)</h2>
+    <p><code>display: flex; justify-content: space-between; align-items: center;</code></p>
+    <div class="contenedor-flex">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 (Más alto)<br>...</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>CSS Grid (Bidimensional)</h2>
+    <p><code>display: grid; grid-template-columns: 100px 1fr 1fr; gap: 10px;</code></p>
+    <div class="contenedor-grid">
+        <div class="item-grid">1 (100px)</div>
+        <div class="item-grid">2 (1fr)</div>
+        <div class="item-grid">3 (1fr)</div>
+        <div class="item-grid span-2">4 (Ocupa 2 col)</div>
+        <div class="item-grid">5</div>
+    </div>
+</body>
+</html>

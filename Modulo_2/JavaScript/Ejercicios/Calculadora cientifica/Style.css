@@ -1,0 +1,162 @@
+/* Importamos una fuente para un look más moderno */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap'); /* Fuente para el título */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    padding: 20px;
+    margin: 0;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor para el título y la calculadora */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Estilos para el título interactivo */
+.main-title {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.2rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.main-title:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+
+/* Contenedor principal de la calculadora (simplificado) */
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cambiado a 4 columnas */
+    grid-template-rows: minmax(120px, auto) repeat(6, 1fr); /* 1 fila para la pantalla, 6 para botones */
+    gap: 10px;
+    padding: 25px;
+    background-color: rgba(12, 21, 31, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    width: 100%;
+    max-width: 500px; /* Ancho máximo para la calculadora */
+}
+
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 8px;
+    transition: background-color .2s, transform .1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+}
+
+.calculator-grid > button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.calculator-grid > button:active {
+    transform: scale(0.95);
+}
+
+/* Estilo para botones que ocupan 2 columnas */
+.span-two-h { grid-column: span 2; }
+
+/* Estilos para botones de operadores */
+.op-btn {
+    background-color: #f39c12;
+}
+.op-btn:hover {
+    background-color: #e67e22;
+}
+
+/* Estilos para botones de funciones */
+.func-btn {
+    background-color: #34495e;
+}
+.func-btn:hover {
+    background-color: #2c3e50;
+}
+
+
+/* Pantalla de la calculadora */
+.output {
+    grid-column: 1 / -1;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #4ca1af;
+}
+
+.previous-operand {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.3rem;
+}
+
+.current-operand {
+    color: white;
+    font-size: 2.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* Media Query para ajustar tamaños en pantallas pequeñas */
+@media (max-width: 600px) {
+    .main-title {
+        font-size: 1.8rem;
+    }
+
+    .calculator-grid {
+        padding: 15px;
+        gap: 8px;
+        min-height: auto;
+    }
+
+    .calculator-grid > button {
+        font-size: 1.2rem;
+        min-height: 50px;
+    }
+
+    .output {
+        padding: 15px;
+        min-height: 100px;
+    }
+
+    .current-operand {
+        font-size: 2.2rem;
+    }
+
+    .previous-operand {
+        font-size: 1.1rem;
+    }
+}

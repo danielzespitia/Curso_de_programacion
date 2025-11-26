@@ -33,6 +33,10 @@ void sonidoAnimal(Animal* animal) {
     animal->hacerSonido();
 }
 
+
+
+
+
 int main() {
     Perro miPerro;
     Gato miGato;

@@ -1,0 +1,42 @@
+body { font-family: sans-serif; padding: 50px; }
+
+/* --- TRANSICIÓN --- */
+.boton {
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    
+    /* Definimos la transición */
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.boton:hover {
+    background-color: #2980b9; /* Cambio de color suave */
+    transform: scale(1.1); /* Crece un poco */
+}
+
+/* --- ANIMACIÓN --- */
+.pelota {
+    width: 50px;
+    height: 50px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    margin-top: 50px;
+    
+    /* Aplicamos la animación */
+    animation: rebotar 2s infinite;
+}
+
+/* Definimos los keyframes */
+@keyframes rebotar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(200px);
+    }
+}

@@ -1,0 +1,62 @@
+body { font-family: sans-serif; height: 2000px; /* Para probar sticky/fixed */ }
+
+.caja {
+    width: 100px;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+/* Static (Por defecto) */
+.static {
+    background-color: gray;
+    position: static;
+}
+
+/* Relative */
+.relative {
+    background-color: orange;
+    position: relative;
+    left: 50px; /* Se mueve 50px desde su posición original */
+    top: 20px;
+    z-index: 1;
+}
+
+/* Absolute */
+.contenedor-relativo {
+    position: relative; /* Necesario para que el hijo absoluto se posicione respecto a este */
+    width: 300px;
+    height: 200px;
+    border: 2px dashed black;
+    margin-top: 50px;
+}
+
+.absolute {
+    background-color: red;
+    position: absolute;
+    bottom: 10px; /* Pegado abajo del contenedor padre */
+    right: 10px;  /* Pegado a la derecha del contenedor padre */
+}
+
+/* Fixed */
+.fixed {
+    background-color: blue;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 150px;
+    height: 50px;
+    z-index: 100;
+}
+
+/* Sticky */
+.sticky {
+    background-color: green;
+    position: sticky;
+    top: 0; /* Se pega al techo al hacer scroll */
+    width: 100%;
+    padding: 10px;
+}

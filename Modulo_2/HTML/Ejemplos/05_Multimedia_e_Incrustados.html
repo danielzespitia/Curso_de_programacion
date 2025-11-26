@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>05 - Multimedia</title>
+</head>
+<body>
+    <h1>Multimedia en HTML</h1>
+
+    <h2>Imágenes</h2>
+    <!-- Imagen simple -->
+    <img src="https://via.placeholder.com/150" alt="Imagen de ejemplo" width="150" height="150">
+    
+    <!-- Imagen con figura y leyenda -->
+    <figure>
+        <img src="https://via.placeholder.com/300x150" alt="Gráfico de ejemplo">
+        <figcaption>Fig. 1: Un gráfico placeholder.</figcaption>
+    </figure>
+
+    <hr>
+
+    <h2>Audio</h2>
+    <audio controls>
+        <!-- Reemplazar src con archivos reales -->
+        <source src="audio.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <hr>
+
+    <h2>Video</h2>
+    <video width="320" height="240" controls poster="https://via.placeholder.com/320x240">
+        <!-- Reemplazar src con archivos reales -->
+        <source src="video.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+    <hr>
+
+    <h2>Iframe (YouTube)</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <hr>
+
+    <h2>SVG (Gráfico Vectorial)</h2>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+
+</body>
+</html>

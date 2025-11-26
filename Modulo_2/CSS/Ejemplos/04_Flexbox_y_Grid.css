@@ -1,0 +1,43 @@
+body { font-family: sans-serif; padding: 20px; }
+h2 { margin-top: 40px; }
+
+.item {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+/* --- FLEXBOX --- */
+.contenedor-flex {
+    display: flex; /* Activa Flexbox */
+    justify-content: space-between; /* Distribuye espacio horizontalmente */
+    align-items: center; /* Alinea verticalmente al centro */
+    background-color: #ecf0f1;
+    height: 150px;
+    padding: 10px;
+}
+
+/* --- GRID --- */
+.contenedor-grid {
+    display: grid; /* Activa Grid */
+    /* 3 columnas: 1ra fija, 2da y 3ra flexibles */
+    grid-template-columns: 100px 1fr 1fr; 
+    gap: 10px; /* Espacio entre celdas */
+    background-color: #ecf0f1;
+    padding: 10px;
+}
+
+.item-grid {
+    background-color: #e74c3c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Un item que ocupa 2 columnas */
+.span-2 {
+    grid-column: span 2;
+    background-color: #8e44ad;
+}

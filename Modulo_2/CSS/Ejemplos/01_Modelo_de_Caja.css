@@ -1,0 +1,29 @@
+/* Reset básico para ver mejor el ejemplo */
+* {
+    box-sizing: border-box; /* Recomendado: incluye padding y border en el ancho total */
+}
+
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.caja {
+    width: 300px;
+    height: 200px;
+    background-color: #e0f7fa; /* Fondo azul claro */
+    
+    /* Padding: Espacio interno */
+    padding: 20px;
+    
+    /* Border: El borde visible */
+    border: 5px solid #006064; /* Borde sólido verde oscuro */
+    
+    /* Margin: Espacio externo */
+    margin: 30px;
+}
+
+.contenido {
+    background-color: #ffccbc; /* Fondo naranja claro para ver el área de contenido */
+    height: 100%;
+}

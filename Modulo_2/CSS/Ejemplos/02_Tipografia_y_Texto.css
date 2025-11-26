@@ -1,0 +1,28 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Familia de fuentes */
+    color: #333; /* Color de texto gris oscuro */
+    line-height: 1.6; /* Altura de línea para legibilidad */
+}
+
+h1 {
+    font-size: 3rem; /* Tamaño grande */
+    text-align: center; /* Centrado */
+    text-transform: uppercase; /* Todo mayúsculas */
+    letter-spacing: 5px; /* Espacio entre letras */
+    color: #2c3e50;
+}
+
+p.destacado {
+    font-weight: bold; /* Negrita */
+    font-style: italic; /* Cursiva */
+    color: #e74c3c; /* Rojo */
+}
+
+a {
+    text-decoration: none; /* Quitar subrayado */
+    color: #3498db;
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}

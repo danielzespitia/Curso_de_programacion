@@ -6,6 +6,7 @@
 mi_lista = [1, 2, 3, 4, 5]  
 # Imprimir la lista
 print("Lista original:", mi_lista)  
+print(f"Lista original: {mi_lista}")
 
 # Acceso a elementos de la lista
 print("Primer elemento:", mi_lista[0])  # Acceso al primer elemento (índice 0)

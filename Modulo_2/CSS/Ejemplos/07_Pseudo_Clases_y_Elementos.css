@@ -1,0 +1,40 @@
+body { font-family: sans-serif; padding: 20px; }
+
+ul { list-style: none; padding: 0; }
+
+/* :nth-child - Selecciona hijos específicos */
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Filas pares de otro color */
+li:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* :first-child - Primer elemento */
+li:first-child {
+    font-weight: bold;
+    color: blue;
+}
+
+/* ::before - Añade contenido antes */
+.precio::before {
+    content: "$";
+    color: green;
+    margin-right: 2px;
+}
+
+/* ::after - Añade contenido después */
+.enlace-externo::after {
+    content: " ↗";
+    font-size: 0.8em;
+}
+
+/* :focus - Cuando el elemento tiene el foco */
+input:focus {
+    background-color: #e8f0fe;
+    border: 2px solid blue;
+    outline: none;
+}

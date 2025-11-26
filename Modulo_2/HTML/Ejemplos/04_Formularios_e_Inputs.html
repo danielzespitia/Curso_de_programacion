@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>04 - Formularios e Inputs</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    
+    <form action="/enviar" method="POST">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            
+            <!-- Input de Texto -->
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
+
+            <!-- Input de Email -->
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com"><br><br>
+
+            <!-- Input de Contraseña -->
+            <label for="password">Contraseña:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+
+            <!-- Input de Fecha -->
+            <label for="fecha">Fecha de Nacimiento:</label><br>
+            <input type="date" id="fecha" name="fecha"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias</legend>
+
+            <!-- Radio Buttons (Selección única) -->
+            <p>Género:</p>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label><br><br>
+
+            <!-- Checkbox (Selección múltiple) -->
+            <input type="checkbox" id="suscripcion" name="suscripcion" checked>
+            <label for="suscripcion">Suscribirme al boletín</label><br><br>
+
+            <!-- Select (Lista desplegable) -->
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+                <option value="mx">México</option>
+                <option value="co">Colombia</option>
+                <option value="ar">Argentina</option>
+                <option value="es">España</option>
+            </select><br><br>
+
+            <!-- Textarea -->
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+        </fieldset>
+
+        <br>
+        <button type="submit">Registrarse</button>
+        <button type="reset">Limpiar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>06 - Tablas</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabla de Productos</h1>
+
+    <table>
+        <caption>Inventario de Almacén 2025</caption>
+        
+        <!-- Encabezado de la tabla -->
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Producto</th>
+                <th>Categoría</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+
+        <!-- Cuerpo de la tabla -->
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Laptop Gamer</td>
+                <td>Electrónica</td>
+                <td>$1200</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Teclado Mecánico</td>
+                <td>Accesorios</td>
+                <td>$80</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Monitor 24"</td>
+                <td>Electrónica</td>
+                <td>$200</td>
+            </tr>
+        </tbody>
+
+        <!-- Pie de la tabla -->
+        <tfoot>
+            <tr>
+                <td colspan="3"><strong>Total de artículos mostrados</strong></td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
