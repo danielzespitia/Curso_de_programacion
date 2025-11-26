@@ -1,5 +1,0 @@
-https://python-fiddle.com/examples/pandas
-https://python-fiddle.com/examples/sklearn
-https://python-fiddle.com/examples/matplotlib
-https://python-fiddle.com/examples/numpy
-https://python-fiddle.com/examples/polaris

@@ -1,2 +1,0 @@
-num = 10
-print("el numero es " +(num %2 ==0)*"par"+ (num %2!=0)* "impar")

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 - Eventos</title>
+    <style>
+        .caja-interactiva {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .rojo { background-color: coral; }
+    </style>
+</head>
+<body>
+    <h1>Manejo de Eventos</h1>
+
+    <div>
+        <label for="input-nombre">Escribe tu nombre:</label>
+        <input type="text" id="input-nombre" placeholder="Escribe aquí...">
+        <p>Hola, <span id="saludo-nombre">...</span></p>
+    </div>
+
+    <div id="mi-caja" class="caja-interactiva">
+        Pasa el mouse o haz click
+    </div>
+
+    <script src="03_Eventos.js"></script>
+</body>
+</html>

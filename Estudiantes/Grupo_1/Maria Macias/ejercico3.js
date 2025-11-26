@@ -1,2 +1,0 @@
-let edadusuario=20;
-

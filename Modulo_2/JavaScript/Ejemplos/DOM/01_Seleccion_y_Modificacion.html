@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 - Selección y Modificación del DOM</title>
+    <style>
+        .caja {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px 0;
+            background-color: #f9f9f9;
+        }
+        .destacado {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo-principal">Aprendiendo el DOM</h1>
+    
+    <div class="caja">
+        <p class="texto">Este es el primer párrafo.</p>
+        <p class="texto">Este es el segundo párrafo.</p>
+    </div>
+
+    <div class="caja" id="contenedor-secundario">
+        <p>Otro contenido aquí.</p>
+        <a href="https://google.com" id="mi-enlace">Ir a Google</a>
+    </div>
+
+    <script src="01_Seleccion_y_Modificacion.js"></script>
+</body>
+</html>
