@@ -6,7 +6,7 @@ Estas propiedades controlan la apariencia visual del texto.
 
 ## 1. `font-family`
 
-**Descripción:**  
+**Descripción:**
 Define la fuente (tipo de letra) del texto. Se suele especificar una lista de fuentes ("stack") como respaldo por si la primera no está disponible.
 
 **Tipos Genéricos:**
@@ -27,7 +27,7 @@ body {
 
 ## 2. `font-size`
 
-**Descripción:**  
+**Descripción:**
 Define el tamaño de la letra.
 
 **Unidades Comunes:**
@@ -48,7 +48,7 @@ h1 {
 
 ## 3. `font-weight`
 
-**Descripción:**  
+**Descripción:**
 Define el grosor (peso) de la fuente.
 
 **Valores:**
@@ -69,7 +69,7 @@ Define el grosor (peso) de la fuente.
 
 ## 4. `color`
 
-**Descripción:**  
+**Descripción:**
 Define el color del texto (primer plano).
 
 **Formatos de Color:**
@@ -92,7 +92,7 @@ p {
 
 ## 5. `text-align`
 
-**Descripción:**  
+**Descripción:**
 Alinea el texto horizontalmente dentro de su contenedor.
 
 **Valores:**
@@ -114,7 +114,7 @@ h1 {
 
 ## 6. `line-height`
 
-**Descripción:**  
+**Descripción:**
 Define la altura de la línea de texto. Es crucial para la legibilidad. Un valor sin unidad (ej. 1.5) es relativo al tamaño de la fuente actual.
 
 **Ejemplo:**
@@ -129,7 +129,7 @@ p {
 
 ## 7. `text-decoration`
 
-**Descripción:**  
+**Descripción:**
 Añade decoraciones al texto, como subrayado.
 
 **Valores:**
@@ -153,7 +153,7 @@ a:hover {
 
 ## 8. `text-transform`
 
-**Descripción:**  
+**Descripción:**
 Controla la capitalización del texto.
 
 **Valores:**
@@ -174,7 +174,7 @@ Controla la capitalización del texto.
 
 ## 9. `letter-spacing`
 
-**Descripción:**  
+**Descripción:**
 Define el espacio entre caracteres.
 
 **Ejemplo:**

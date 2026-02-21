@@ -1,3 +1,3 @@
-# Este es un comentario. El intérprete lo ignora.
-# La función print() muestra un mensaje en la pantalla.
 print("¡Hola, Mundo!")
+edad = input("Introduce tu edad: ")
+print("Tienes " + edad + " años.")

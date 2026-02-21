@@ -1,11 +1,15 @@
-// El encapsulamiento es el principio de agrupar los datos y los métodos que los manipulan dentro de una clase, y restringir el acceso directo a los datos. 
+// El encapsulamiento es el principio de agrupar los datos y los métodos que los manipulan 
+// dentro de una clase, y restringir el acceso directo a los datos. 
 // Esto se logra mediante los especificadores de acceso:
 //
 // public: Los miembros son accesibles desde cualquier parte del código.
-// private: Los miembros solo son accesibles desde dentro de la misma clase. Es la práctica recomendada para los atributos.
-// protected: Similar a private, pero también permite el acceso desde clases hijas (lo veremos en Herencia).
+// private: Los miembros solo son accesibles desde dentro de la misma clase. Es la
+// práctica recomendada para los atributos.
+// protected: Similar a private, pero también permite el acceso desde clases hijas 
+// (lo veremos en Herencia).
 //
-// Para acceder o modificar datos privados, se utilizan métodos públicos especiales, comúnmente llamados getters y setters.
+// Para acceder o modificar datos privados, se utilizan métodos públicos especiales, 
+// comúnmente llamados getters y setters.
 //
 // Ejemplo de Encapsulamiento
 

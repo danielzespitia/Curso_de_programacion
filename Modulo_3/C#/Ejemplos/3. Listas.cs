@@ -23,8 +23,9 @@
             // Crear una lista vacía de strings para almacenar nombres de frutas.
             List<string> listaDeFrutas = new List<string>();
 
-            // Agregar elementos a la lista con el método .Add()
+           // Agregar elementos a la lista con el método .Add()
             Console.WriteLine("Agregando frutas a la lista...");
+            
             listaDeFrutas.Add("Manzana");
             listaDeFrutas.Add("Banana");
             listaDeFrutas.Add("Naranja");

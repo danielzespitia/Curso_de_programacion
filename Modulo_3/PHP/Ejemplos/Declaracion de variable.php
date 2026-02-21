@@ -20,10 +20,7 @@ $esDesarrollador =  true;
 // Imprimimos los valores y sus tipos para verificar la inferencia de PHP.
 // Usamos var_dump() que muestra el tipo de dato y el valor.
 echo "Ejemplo de Inferencia de Tipos:\n";
-var_dump($nombre);          // Salida: string(12) "Carlos Rivas"
-var_dump($edad);            // Salida: int(28)
-var_dump($altura);          // Salida: float(1.75)
-var_dump($esDesarrollador); // Salida: bool(true)
+
 echo "\n----------------------------------------\n\n";
 
 

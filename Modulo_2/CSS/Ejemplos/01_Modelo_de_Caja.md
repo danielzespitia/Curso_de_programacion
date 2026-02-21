@@ -6,7 +6,7 @@ El Modelo de Caja es el concepto fundamental de diseño en CSS. Cada elemento en
 
 ## 1. `width` y `height`
 
-**Descripción:**  
+**Descripción:**
 Definen el ancho y la altura del área de contenido de un elemento.
 
 **Valores Comunes:**
@@ -29,7 +29,7 @@ div {
 
 ## 2. `padding` (Relleno)
 
-**Descripción:**  
+**Descripción:**
 Es el espacio **interno** entre el contenido del elemento y su borde. El padding toma el color de fondo del elemento.
 
 **Sintaxis (Shorthand):**
@@ -54,7 +54,7 @@ Es el espacio **interno** entre el contenido del elemento y su borde. El padding
 
 ## 3. `margin` (Margen)
 
-**Descripción:**  
+**Descripción:**
 Es el espacio **externo** alrededor del elemento, fuera de su borde. Es transparente. Se usa para separar elementos entre sí.
 
 **Truco de Centrado:**
@@ -75,7 +75,7 @@ Los márgenes verticales adyacentes a veces se combinan en uno solo (el mayor de
 
 ## 4. `border` (Borde)
 
-**Descripción:**  
+**Descripción:**
 Define la línea que rodea el padding y el contenido.
 
 **Sintaxis (Shorthand):**
@@ -95,7 +95,7 @@ Define la línea que rodea el padding y el contenido.
 
 ## 5. `box-sizing`
 
-**Descripción:**  
+**Descripción:**
 Controla cómo se calcula el ancho y alto total de un elemento. Esta es quizás la propiedad más importante para evitar dolores de cabeza con el layout.
 
 **Valores:**
@@ -117,8 +117,7 @@ Controla cómo se calcula el ancho y alto total de un elemento. Esta es quizás 
 
 ## 6. `max-width` / `min-width`
 
-**Descripción:**  
-Establecen restricciones al ancho de un elemento.
+**Descripción:**Establecen restricciones al ancho de un elemento.
 
 - `max-width`: El elemento no puede ser más ancho que esto (útil para responsividad, para que no se desborde en pantallas pequeñas).
 - `min-width`: El elemento no puede ser más estrecho que esto.
@@ -136,7 +135,7 @@ img {
 
 ## 7. `overflow`
 
-**Descripción:**  
+**Descripción:**
 Controla qué sucede si el contenido es demasiado grande para caber en el área del elemento.
 
 **Valores:**

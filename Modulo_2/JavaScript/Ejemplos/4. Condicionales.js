@@ -6,16 +6,23 @@ let mensaje;
 if (puntaje >= 90) {
     calificacionLetra = "A";
     mensaje = "¡Excelente trabajo!";
-} else if (puntaje >= 80) {
+}
+
+else if (puntaje >= 80) {
     calificacionLetra = "B";
     mensaje = "¡Buen trabajo, sigue así!";
-} else if (puntaje >= 70) {
+}
+
+else if (puntaje >= 70) {
     calificacionLetra = "C";
     mensaje = "Aprobado, pero puedes mejorar.";
-} else if (puntaje >= 60) {
+} 
+else if (puntaje >= 60) {
     calificacionLetra = "D";
     mensaje = "Necesitas estudiar más.";
-} else {
+}
+
+else {
     calificacionLetra = "F";
     mensaje = "Reprobado. Por favor, consulta al profesor.";
 }

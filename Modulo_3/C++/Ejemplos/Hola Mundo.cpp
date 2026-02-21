@@ -1,7 +1,6 @@
-// Incluimos la librería iostream para poder usar cout y cin
 #include <iostream>
 
-int main() {
+int main() { // cout = print
 
     std::cout << "¡Hola, mundo!" << std::endl;
 
