@@ -3,6 +3,7 @@
 // Usamos 'let' para el nombre de usuario porque podría querer cambiarlo más adelante.
 let nombreUsuario = "AlexDev";
 console.log("Nombre de usuario inicial:", nombreUsuario);
+console.log(`Nombre de usuario ${nombreUsuario}`);
 
 // El usuario decide cambiar su nombre.
 nombreUsuario = "AlexDeveloper99";

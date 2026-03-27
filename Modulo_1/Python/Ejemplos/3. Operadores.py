@@ -30,13 +30,7 @@ print(f"And: {and_condition}, Or: {or_condition}, Not: {not_condition}")
 
 x = 10      
 y = 5
+
 x += 5  # x = x + 5, ahora x es 15
 y -= 2  # y = y - 2, ahora y es 3
 print(f"x: {x}, y: {y}")
-
-# Identidad: Para comparar si dos variables son el mismo objeto en memoria.
-
-a = [1, 2, 3]       
-b = a  # b es una referencia al mismo objeto que a
-c = a.copy()  # c es una copia de a, no el mismo objeto
-print(f"a is b: {a is b}, a is c: {a is c}, a == c: {a == c}")  # True, False, True

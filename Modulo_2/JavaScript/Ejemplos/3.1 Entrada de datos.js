@@ -1,3 +1,6 @@
+import PromptSync from "prompt-sync";
+const prompt = PromptSync({ sigint: true });
+
 let dato = prompt("Por favor, ingresa un dato:");
 console.log("Has ingresado:", dato);
 console.log(`Tipo de dato ingresado: ${dato}`);
@@ -15,5 +18,6 @@ console.log("Tipo de dato ingresado:", typeof esAdulto);
 
 let precio = parseFloat(prompt("Por favor, ingresa un dato:"));
 console.log("Has ingresado:", precio);
+precio = parseFloat(precio.toFixed(2));
 console.log(`Tipo de dato ingresado: ${precio}`);
 console.log("Tipo de dato ingresado:", typeof precio);

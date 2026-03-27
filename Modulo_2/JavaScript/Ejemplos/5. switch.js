@@ -15,5 +15,5 @@ switch (rolUsuario) {
         break;
     default: // Se ejecuta si ninguno de los casos anteriores coincide.
         console.log("Rol no reconocido. Acceso denegado.");
-        break;
+        
 }
