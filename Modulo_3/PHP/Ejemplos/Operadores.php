@@ -19,29 +19,22 @@ echo "Asignación con suma (+=): " . $valor . "\n\n"; // Salida: 7
 $edad = 20;
 $nombre = "20";
 
-if ($edad == $nombre) {
-    echo "== : Son iguales en valor.\n"; // Se ejecuta
-}
-
-if ($edad === $nombre) {
-    echo "=== : Son idénticos en valor y tipo.\n"; // No se ejecuta porque uno es int y el otro string
-}
-
-if ($edad != 18) {
-    echo "!= : Es diferente de 18.\n\n"; // Se ejecuta
-}
+$igualdad = ($edad == $nombre); // true, porque compara solo el valor
+$identidad = ($edad === $nombre); // false, porque compara valor y tipo
+$diferente = ($edad != $nombre); // false, porque compara solo el valor
+$noIdentico = ($edad !== $nombre); // true, porque compara valor y tipo
+$mayor = ($edad > 18); // true
+$menor = ($edad < 30); // true
+$mayor_igual = ($edad >= 18); // true
+$menor_igual = ($edad <= 30); // true
 
 // ## 4. Operadores Lógicos ##
 $esEstudiante = true;
 $tieneBeca = false;
 
-if ($esEstudiante && $edad < 25) {
-    echo "&& : Es un estudiante menor de 25 años.\n"; // Se ejecuta
-}
-
-if ($esEstudiante || $tieneBeca) {
-    echo "|| : Es estudiante o tiene beca.\n\n"; // Se ejecuta
-}
+$and = $esEstudiante && $tieneBeca; // AND lógico
+$or = $esEstudiante || $tieneBeca;  // OR lógico
+$not = !$esEstudiante; // NOT lógico
 
 // ## 5. Operadores de Incremento/Decremento ##
 $contador = 5;
@@ -50,12 +43,3 @@ echo "Incremento (++): " . $contador . "\n"; // Salida: 6
 
 $contador--; // Disminuye el valor en 1
 echo "Decremento (--): " . $contador . "\n\n"; // Salida: 5
-
-// ## 6. Operador de Concatenación ##
-$nombre = "Juan";
-$apellido = "Pérez";
-$nombreCompleto = $nombre . " " . $apellido;
-
-echo "Concatenación (.): " . $nombreCompleto . "\n"; // Salida: Juan Pérez
-
-?>
