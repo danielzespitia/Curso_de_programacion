@@ -1,110 +1,141 @@
-# Permiten ejecutar un bloque de código solo si se cumple una condición. if es el primero, elif (else if) 
-# permite añadir más condiciones, y else se ejecuta si ninguna de las anteriores es verdadera.
+edad = int(input("\n¿Cuántos años tienes? "))
 
-edad = 17
+# Las condiciones necesitan un dato booleano (True o False) para decidir 
+# qué bloque de código ejecutar. En este caso, se evalúa la edad ingresada 
+# por el usuario para determinar si es menor de edad, adulto o adulto mayor.
+
 if edad < 18:
     print("Eres menor de edad.")
-    a=12
-    b=12
-    c=a+b
-    print(c)
-elif edad == 18:
-    print("¡Justo tienes 18 años!")
+elif edad < 65:
+    print("Eres adulto.")
 else:
-    print("Eres mayor de edad.")
+    print("Eres adulto mayor.")
     
-# Explicación:
-# - if evalúa si la condición es verdadera. Si lo es, ejecuta el bloque de código indentado debajo.
-# - elif permite añadir más condiciones. Si la primera condición no se cumple, evalúa la     siguiente.
-# - else se ejecuta si ninguna de las condiciones anteriores es verdadera.  
-# - Las condiciones pueden ser comparaciones (edad < 18) o cualquier expresión que devuelva True o False.
-# - Puedes tener múltiples elif y un solo else al final.
-# - Es importante mantener la indentación correcta para que Python entienda qué código pertenece a cada bloque.
-# - Puedes usar operadores lógicos (and, or, not) para combinar condiciones más complejas.
-# - También puedes usar operadores de comparación (==, !=, >, <, >=, <=) para comparar valores.
-# - Recuerda que las condiciones se evalúan en orden, y solo se ejecuta el bloque del primer if o elif que sea verdadero.
-# - Si necesitas ejecutar un bloque de código sin condiciones, puedes usar un bloque if sin elif o else.
+    
+    
+    
+    
+# Ejemplo 2
 
-# Condificonales Combnados
+entrada = True
 
-# Operador and (y)
-# Permite combinar condiciones, y solo se cumple si ambas son verdaderas.
-# Ejemplo: Acceso a un área restringida solo si el usuario es mayor de edad
-# y es un administrador.
-# Si ambas condiciones son verdaderas, se concede el acceso.
+# Se utiliza una variable booleana para controlar el acceso a un evento. 
+# Si la variable 'entrada' es True, se permite la entrada; de lo contrario, se deniega el acceso.
 
-edad = 25
-es_administrador = True
-
-if edad >= 18 and es_administrador:
-    print("Acceso concedido. Bienvenido, administrador.")
+if entrada:
+    print("¡Bienvenido al evento!") 
 else:
-    print("Acceso denegado.")
+    print("Lo siento, no puedes entrar al evento.")
+   
+   
+   
+   
     
-# Operador or (o)
-# Permite combinar condiciones, y se cumple si al menos una es verdadera.   
-# Ejemplo: Acceso a un área restringida si el usuario es mayor de edad
-# o es un administrador.
+# Ejemplo 3
 
-edad = 16
-es_administrador = False    
-if edad >= 18 or es_administrador:
-    print("Acceso concedido.")
-else:
-    print("Acceso denegado.")
+if True:
+    print("Esta condición siempre es verdadera.")
+else:   
+    print("Esta condición nunca se ejecutará.")
+  
+  
+  
     
-# Operador not (no)
-# Invierte el resultado de una condición.   
-# Ejemplo: Acceso a un área restringida si el usuario no es un administrador.
+# Ejemplo 4
 
-es_administrador = False
-if not es_administrador:
-    print("Acceso denegado. Solo administradores pueden acceder.")
-else:
-    print("Acceso concedido. Bienvenido, administrador.")
-    
-# Operadores de comparación
-# Permiten comparar valores y devolver True o False.
-# Ejemplo: Comprobar si un número es mayor que otro.
-numero1 = 10
-numero2 = 5
-if numero1 > numero2:
-    print(f"{numero1} es mayor que {numero2}.")
-else:
-    print(f"{numero1} no es mayor que {numero2}.")
-    
-# Operadores de comparación comunes:
-# == (igual a), != (diferente de), > (mayor que), < (menor que),
-# >= (mayor o igual que), <= (menor o igual que).  
- 
-# Ejemplo de operadores de comparación
+dia = "lunes"
 
-numero1 = 10
-numero2 = 5
-if numero1 == numero2:
-    print(f"{numero1} es igual a {numero2}.")
-elif numero1 != numero2:
-    print(f"{numero1} es diferente de {numero2}.")  
-elif numero1 > numero2:
-    print(f"{numero1} es mayor que {numero2}.")
-elif numero1 < numero2: 
-    print(f"{numero1} es menor que {numero2}.") 
-# elif numero1 >= numero2:
-#     print(f"{numero1} es mayor o igual que {numero2}.")
-# elif numero1 <= numero2:
-#     print(f"{numero1} es menor o igual que {numero2}.")
-# Nota: Puedes usar elif para añadir más condiciones, pero recuerda que solo se ejecutará el bloque del primer if o elif que sea verdadero.
-else:
-    print("Ninguna de las condiciones anteriores se cumplió.")
-    
-# Ejemplo de uso de operadores lógicos
-numero1 = 10    
-numero2 = 5
-numero3 = 15
-if (numero1 > numero2 and numero1 < numero3) or (numero2 < numero3):
-    print(f"{numero1} es mayor que {numero2} y menor que {numero3}, o {numero2} es menor que {numero3}.")
-    # Nota: Los operadores lógicos permiten combinar condiciones de manera flexible.
-else:
-    print("Ninguna de las condiciones se cumplió.")
-    
+# Podemos verificar un string para saber si se ejecutara
 
+if dia == "lunes":
+    print("Hoy es lunes, comienza la semana.")
+elif dia == "viernes":
+    print("Hoy es viernes, el fin de semana está cerca.")
+else:
+    print("Hoy es un día entre semana.")
+    
+    
+    
+    
+# Ejemplo 5
+
+edad_persona = int(input("\nIngresa tu edad: "))
+
+# Utilizamos los operadores logicos para añadir mas condiciones a cumplir
+
+if edad_persona <= 18 and edad_persona <= 65:
+    print("Acabas de cumplir 18 años, eres mayor de edad.")
+elif edad_persona > 65 and edad_persona <= 100:
+    print("Eres adulto mayor.")
+elif edad_persona > 100 and edad_persona <= 120:
+    print("¡Wow! Eres una persona centenaria.")
+elif edad_persona < 0:
+    print("La edad no puede ser negativa.")
+elif edad_persona == 0:
+    print("¡Felicidades por tu nacimiento!")
+else:
+    print("Edad no válida.")
+    
+    
+    
+# Ejemplo 6
+
+animal_favorito = input("\n¿Cuál es tu animal favorito? ")
+
+# En este ejemplo, se utiliza una estructura condicional para verificar el animal favorito del usuario.
+# Se consideran diferentes formas de escribir el nombre del animal (mayúsculas y sinónimos) para mostrar
+# un mensaje personalizado. Si el usuario ingresa un animal diferente, se muestra un mensaje de interés 
+# por su elección.
+
+if (animal_favorito == "perro" or animal_favorito == "PERRO") or (animal_favorito == "canino" or animal_favorito == "CANINO"):
+    print("¡Los perros son geniales!")
+elif (animal_favorito == "gato" or animal_favorito == "GATO") or animal_favorito == "felino":
+    print("¡Los gatos son adorables!")
+
+# En este ejemplo, se utilizan operadores lógicos para verificar si el animal favorito del usuario es 
+# un perro, gato o pájaro, considerando diferentes formas de escribirlo (mayúsculas y sinónimos). Si 
+# el usuario ingresa un animal diferente, se muestra un mensaje de interés por su elección.
+
+elif (animal_favorito == "pájaro" or animal_favorito == "PÁJARO") or animal_favorito == "ave":
+    print("¡Los pájaros son fascinantes!")
+else:
+    print("¡Interesante elección de animal favorito!")
+    
+    
+    
+    
+# Ejemplo 7
+
+herramienta = input("\n¿cuál es tu herramienta de programación favorita? ").lower()
+
+# En este ejemplo, se utiliza el método .lower() para convertir la entrada del usuario a minúsculas,
+# lo que permite comparar la respuesta sin importar si el usuario ingresa mayúsculas o minúsculas. 
+
+if herramienta == "python":
+    print("¡Python es una excelente herramienta de programación!")
+elif herramienta == "java":
+    print("¡Java es una herramienta de programación muy popular!")
+elif herramienta == "javascript":
+    print("¡JavaScript es esencial para el desarrollo web!")
+else:
+    print("¡Interesante elección de herramienta de programación!")
+    
+   
+   
+    
+# Ejemplo 8
+
+lenguaje = input("\n¿cuál es tu lenguaje de programación favorito? ")
+
+# En este ejemplo, se utiliza el método .lower() para convertir la entrada del usuario a minúsculas,
+# lo que permite comparar la respuesta sin importar si el usuario ingresa mayúsculas o minúsculas. 
+# Se verifica si el lenguaje de programación favorito del usuario es Python o Java, y se muestra un 
+# mensaje personalizado para cada caso. Si el usuario ingresa un lenguaje diferente, se muestra un 
+# mensaje de interés por su elección.
+
+if lenguaje == "python".lower:
+    print("¡Python es un lenguaje de programación versátil y fácil de aprender!")
+elif lenguaje == "java".lower:
+    print("¡Java es un lenguaje de programación robusto y ampliamente utilizado!")
+else:
+    print("¡Interesante elección de lenguaje de programación!")
