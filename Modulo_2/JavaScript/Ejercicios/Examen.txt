@@ -78,19 +78,6 @@ Debe imprimir en la consola los números del **10 al 1**, y al final, imprimir *
 
 ---
 
-## 8️⃣ El Reto "FizzBuzz"
-
-Escribe un programa que use un bucle `for` para iterar del **1 al 50**. Para cada número, aplica las siguientes reglas:
-
-- Si el número es divisible por 3, imprime **"Fizz"**.
-- Si el número es divisible por 5, imprime **"Buzz"**.
-- Si el número es divisible por 3 y por 5, imprime **"FizzBuzz"**.
-- Si no cumple ninguna de las anteriores, imprime el número.
-
-💡 *Pista: Necesitarás el operador módulo (%).*
-
----
-
 ## 9️⃣ Suma de los Primeros 100 Números
 
 Crea una variable `sumaTotal` inicializada en **0**.  

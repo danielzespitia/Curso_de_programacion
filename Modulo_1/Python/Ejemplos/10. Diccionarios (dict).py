@@ -73,13 +73,5 @@ print("\nValores del diccionario:", mi_diccionario.values())  # Imprime todos lo
 # Obtener los pares clave-valor del diccionario
 print("\nPares clave-valor del diccionario:", mi_diccionario.items())  # Imprime todos los pares clave-valor del diccionario
 
-# Comprobar el índice de una clave en un diccionario (esto generará un error porque los diccionarios no tienen índices)
-try:    
-    print("Índice de la clave 'nombre':", list(mi_diccionario.keys()).index("nombre"))  # Esto generará un error porque los diccionarios no tienen índices
-except ValueError as e:
-    print("\nError al intentar obtener el índice de una clave:", e)
-
-# Comprobar si un diccionario es vacío
-diccionario_vacio = {}
-print("\n¿mi_diccionario es vacío?", not mi_diccionario)  # Comprueba si el diccionario no tiene elementos
-print("¿diccionario_vacio es vacío?", not diccionario_vacio)  # Comprueba si el diccionario vacío no tiene elementos
+for clave in mi_diccionario.keys():
+    print(f"\nClave: {clave}, Valor: {mi_diccionario[clave]}")  # Imprime cada clave y su valor asociado usando keys()

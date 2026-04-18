@@ -38,15 +38,10 @@ $colores = ["Rojo", "Verde", "Azul"];
 echo "El segundo color es: " . $colores[1] . "\n\n"; // Salida: El segundo color es: Verde
 
 
-echo "## 6. Object (Objeto) ##\n";
-class Persona {
-    public $nombre;
-    public $edad;
-}
-
-echo "## 7. NULL ##\n";
+echo "## 6. NULL ##\n";
 $variableNula = NULL;
 $sinValor; // Una variable no definida también tiene el valor NULL
+
 var_dump($variableNula); // Salida: NULL
 // var_dump($sinValor); // También mostraría NULL, pero con una advertencia (Notice)
 echo "\n";

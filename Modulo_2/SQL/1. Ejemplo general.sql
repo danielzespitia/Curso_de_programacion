@@ -39,7 +39,7 @@ CONCEPTOS CLAVE:
 -- Primero, creamos nuestra base de datos para el curso.
 -- CREATE DATABASE crea un nuevo contenedor lógico para nuestras tablas y datos.
 -- Es la primera instrucción que se suele ejecutar en un proyecto nuevo.
-CREATE DATABASE IF NOT EXISTS ECommerceDB;
+CREATE DATABASE ECommerceDB;
 
 -- Usamos el comando USE para seleccionar la base de datos sobre la que queremos trabajar.
 -- Todas las consultas siguientes se ejecutarán dentro de 'ECommerceDB'.
@@ -146,7 +146,9 @@ ya que especifica explícitamente dónde va cada valor.
 -- (Primero, volvemos a añadir la columna 'age' que borramos antes para que los inserts funcionen)
 ALTER TABLE Customers ADD COLUMN age INT;
 
-INSERT INTO Customers (customer_id, first_name, last_name, age, country, email) VALUES
+INSERT INTO Customers (customer_id, first_name, last_name, age, country, email) 
+
+VALUES
 (1, 'Juan', 'Perez', 28, 'Mexico', 'juan.perez@email.com'),
 (2, 'Ana', 'García', 34, 'España', 'ana.garcia@email.com'),
 (3, 'Carlos', 'Rodriguez', 45, 'Argentina', 'carlos.r@email.com'),
@@ -217,6 +219,12 @@ El asterisco `*` es un comodín que significa "todas las columnas".
 -- Seleccionar toda la información de todos los clientes.
 SELECT * FROM Customers;
 
+SELECT nombre_lenguaje FROM lenguajes_aprendidos
+-- SELECT para consultar
+-- * o el nombre de la columna a consultar
+-- FROM para decir desde donde vamos a consultar
+-- El nombre de la tabla a consultar
+
 -- Seleccionar solo el nombre, apellido y país de los clientes.
 SELECT first_name, last_name, country FROM Customers;
 
@@ -230,24 +238,30 @@ Permite hacer preguntas mucho más precisas.
 */
 
 -- Clientes que son de Mexico.
-SELECT * FROM Customers WHERE country = 'Mexico';
+SELECT * FROM Customers 
+WHERE country = 'Mexico';
 
 -- Clientes que tienen más de 30 años.
-SELECT * FROM Customers WHERE age > 30;
+SELECT * FROM Customers 
+WHERE age > 30;
 
 -- Pedidos con una cantidad de items mayor o igual a 2.
-SELECT * FROM Orders WHERE amount >= 2;
+SELECT * FROM Orders
+WHERE amount >= 2;
 
 -- Clientes que NO son de España.
-SELECT * FROM Customers WHERE country != 'España';
+SELECT * FROM Customers 
+WHERE country != 'España';
 
 -- Uso de `AND` (ambas condiciones deben ser verdaderas)
 -- Clientes de Mexico que tienen más de 30 años.
-SELECT * FROM Customers WHERE country = 'Mexico' AND age > 30;
+SELECT * FROM Customers 
+WHERE country = 'Mexico' AND age > 30;
 
 -- Uso de `OR` (al menos una de las condiciones debe ser verdadera)
 -- Clientes que son de Colombia O de Argentina.
-SELECT * FROM Customers WHERE country = 'Colombia' OR country = 'Argentina';
+SELECT * FROM Customers 
+WHERE country = 'Colombia' OR country = 'Argentina';
 
 
 -- =================================================================================
@@ -260,13 +274,16 @@ SELECT * FROM Customers WHERE country = 'Colombia' OR country = 'Argentina';
 */
 
 -- Ordenar a los clientes por su nombre de la A a la Z.
-SELECT * FROM Customers ORDER BY first_name ASC;
+SELECT * FROM Customers 
+ORDER BY first_name ASC;
 
 -- Ordenar a los clientes por edad, del más viejo al más joven.
-SELECT * FROM Customers ORDER BY age DESC;
+SELECT * FROM Customers 
+ORDER BY age DESC;
 
 -- Ordenar por múltiples columnas: por país, y dentro de cada país, por nombre.
-SELECT * FROM Customers ORDER BY country, first_name;
+SELECT * FROM Customers 
+ORDER BY country, first_name;
 
 
 -- ###################################################################################
