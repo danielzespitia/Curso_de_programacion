@@ -12,17 +12,6 @@ print("Tupla original:", mi_tupla)
 # Acceso a elementos de la tupla
 print("Primer elemento:", mi_tupla[0])  # Acceso al primer elemento
 print("Último elemento:", mi_tupla[-1])  # Acceso al último elemento
-# Intento de modificar un elemento de la tupla (esto generará un error)
-try:
-    mi_tupla[2] = 10  # Esto generará un error porque las tuplas son inmutables
-except TypeError as e:  
-    print("Error al intentar modificar un elemento de la tupla:", e)
-
-# Añadir un elemento a una tupla (esto generará un error)
-try:
-    mi_tupla.append(6)  # Esto generará un error porque las tuplas no tienen el método append
-except AttributeError as e:
-    print("Error al intentar añadir un elemento a la tupla:", e)
 
 # Longitud de la tupla
 print("Longitud de la tupla:", len(mi_tupla))  # Imprime la cantidad de elementos en la tupla
